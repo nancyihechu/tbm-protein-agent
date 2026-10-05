@@ -62,6 +62,9 @@ Notes:
   `eval "$(conda shell.bash hook)"`, `conda activate <path>`. `environment.yml`
   in this repo recreates it. MODELLER needs a free academic license key
   (set `KEY_MODELLER` before installing); the key is not stored in this repo.
+- AlphaFold3 predictions were generated locally on Hellbender with the module
+  `alphafold3/alphafold3_v301_deepmind` (one seed, five samples, one NVIDIA L40S
+  GPU on the `dkhf3-lab-gpu` partition), not on the AlphaFold Server.
 - The AlphaFold3 3.0.1 module runs the Singularity image
   `/cluster/software/src/SINGULARITY_IMAGES/alphafold3/ALPHAFOLD_3.0.1/alphafold3_301.sif`,
   pulled from `docker://tuftsttsrt/alphafold3:3.0.1`. Inside the image, the
@@ -152,6 +155,7 @@ The AlphaFold3 input JSON is:
 ```
 .
 ├── README.md
+├── LICENSE                          MIT license for the code
 ├── ALPHAFOLD3_OUTPUT_NOTICE.txt     Terms notice for the AlphaFold3 outputs
 ├── environment.yml                  tbm_tools conda env
 ├── SCRIPTS/
@@ -262,12 +266,14 @@ Example (`targets/T1147/metadata.json`, `models[]` and `problems[]` shortened):
 
 ## Results
 
-| Target | Template(s) | Identity | Query coverage | Residues modeled | Best DOPE (model) | AF3 mean pLDDT | AF3 pTM | TM-score vs AF3, residue-matched | TM-score vs AF3, TM-align |
+| Target | Template(s) | Identity | Query coverage | Residues modeled | Best DOPE (model) | AF3 mean pLDDT (whole protein) | AF3 pTM | TM-score vs AF3, residue-matched | TM-score vs AF3, TM-align |
 |---|---|---|---|---|---|---|---|---|---|
 | T1147 (103 aa) | 2LW3_A | 55% | 15-103 (86%) | 1-103 | -6472.1 (model 1) | 91.2 | 0.79 | 0.596 | 0.629 |
-| T1133 (585 aa) | 3WJ9_B | 37% | 5-418 (71%) | 5-418 | -42136.5 (model 5) | 88.5 (95.6 over 5-418) | 0.78 | 0.893 | 0.917 |
+| T1133 (585 aa) | 3WJ9_B | 37% | 5-418 (71%) | 5-418 | -42136.5 (model 5) | 88.5 | 0.78 | 0.893 | 0.917 |
 | T1183 (200 aa) | 6N9A_B, 6S84_C, 2A6A_A | 24%, 25%, 25% | 1-199 (100%) | 1-200 | -21673.1 (model 5) | 93.2 | 0.90 | 0.744 | 0.751 |
 
+- AF3 mean pLDDT is averaged over the whole protein. Over the TBM modeled range
+  it is the same for T1147 and T1183; for T1133 (residues 5-418) it is 95.6.
 - All 15 TBM models have GA341 of 0.999 or 1.000.
 - TM-scores are normalized by the TBM model length. "Residue-matched" (TMscore)
   compares each residue only with the same residue in the AlphaFold3 model;
@@ -322,9 +328,6 @@ from cryo-EM ribosome complexes at 17% identity) were excluded.
   model was used.
 - **Old search databases.** pdb70 and UniRef30 date from 2020, so templates and
   homologs deposited later are missing.
-- **AlphaFold3 was run locally on Hellbender** (module
-  `alphafold3/alphafold3_v301_deepmind`, one seed, five samples), not on the
-  AlphaFold Server.
 - **The comparison is to AlphaFold3, not to the true structure.** TM-scores and
   RMSDs measure agreement with the AlphaFold3 prediction, and DOPE and GA341 are
   statistical estimates of model quality.
@@ -358,3 +361,9 @@ Each output folder keeps its `TERMS_OF_USE.md`, and `ALPHAFOLD3_OUTPUT_NOTICE.tx
 covers the derived files (trimmed structures, superpositions and figures).
 If you use them, cite: Abramson, J. et al. Accurate structure prediction of
 biomolecular interactions with AlphaFold 3. *Nature* (2024).
+
+## License
+
+The code in this repository is released under the MIT License (see `LICENSE`).
+AlphaFold3 outputs and files derived from them remain under the AlphaFold 3
+Output Terms of Use described above.
