@@ -1,0 +1,107 @@
+{
+  "target": "T1147",
+  "description": "T1147 KEK_05752, MmpS5, Mycobacterium thermoresistibile, 103 residues",
+  "length": 103,
+  "fasta": "T1147.fasta",
+  "created": "2026-10-05",
+  "template_search": {
+    "hhblits_db": "UniRef30_2020_06",
+    "hhsearch_db": "pdb70 (2020-04)",
+    "hhr": "hhsearch_output/T1147.hhr",
+    "choice": "Only qualifying hit (screen PASS): prob 99.6, 55% identity."
+  },
+  "templates": [
+    {
+      "pdb_chain": "2LW3_A",
+      "hhsearch_rank": 1,
+      "probability": 99.63,
+      "evalue": 9.3e-20,
+      "identity_pct": 55,
+      "query_range": [
+        15,
+        103
+      ],
+      "template_seqres_range": [
+        2,
+        90
+      ],
+      "resolution_A": null,
+      "protein": "Putative membrane protein mmpS4",
+      "file": "templates/2lw3_A.pdb"
+    }
+  ],
+  "modeled_range": [
+    1,
+    103
+  ],
+  "alignment": "alignment/T1147.pir",
+  "modeller": {
+    "version": "10.8",
+    "n_models": 5,
+    "slurm_job": "18319194",
+    "models": [
+      {
+        "file": "tbm_models/T1147.B99990001.pdb",
+        "dope": -6472.051,
+        "ga341": 0.999
+      },
+      {
+        "file": "tbm_models/T1147.B99990002.pdb",
+        "dope": -6276.299,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1147.B99990003.pdb",
+        "dope": -6313.451,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1147.B99990004.pdb",
+        "dope": -6341.696,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1147.B99990005.pdb",
+        "dope": -6429.45,
+        "ga341": 1.0
+      }
+    ],
+    "best_model": "tbm_models/T1147.B99990001.pdb",
+    "best_dope": -6472.051,
+    "best_ga341": 0.999
+  },
+  "alphafold3": {
+    "module": "alphafold3/alphafold3_v301_deepmind",
+    "slurm_job": "18319106",
+    "model": "af3_model/t1147/t1147_model.cif",
+    "seeds": 1,
+    "samples": 5,
+    "ptm": 0.79,
+    "ranking_score": 0.84,
+    "fraction_disordered": 0.12,
+    "mean_plddt": 91.21,
+    "mean_plddt_modeled_range": 91.21
+  },
+  "comparison": {
+    "dir": "comparison/T1147.B99990001_vs_t1147_model",
+    "tm_align": {
+      "tm_score_norm_tbm": 0.62892,
+      "tm_score_norm_af3": 0.62892,
+      "rmsd": 2.85,
+      "aligned_length": 90,
+      "pairs_within_5A": 82
+    },
+    "residue_matched": {
+      "tm_score": 0.5955,
+      "rmsd": 8.448,
+      "gdt_ts": 0.5534,
+      "residues_in_common": 103
+    }
+  },
+  "problems": [
+    "Full sequence modeled as instructed. Residues 1-14 start with GPLGS, likely an expression-tag remnant.",
+    "Template 2LW3 is an NMR ensemble; model 1 of the ensemble was used.",
+    "TBM and AF3 agree in the core (10-94). The C-terminal residues 95-103 point a different way (up to 41 A apart; AF3 pLDDT about 84), probably following the NMR template's flexible end; with residues 1-9 they account for most of the 8.45 A residue-matched RMSD.",
+    "Residues 1-14 have no template; MODELLER built them without template restraints."
+  ]
+}

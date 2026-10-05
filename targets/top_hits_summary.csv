@@ -1,0 +1,10 @@
+query,query_len,rank,id,prob,evalue,identity,aligned_cols,q_start,q_end,t_start,t_end,t_len,description,q_coverage
+T1104,117,1,2K2U_B,46.88,16.0,19,16,13,28,19,34,35,"RNA polymerase II transcription factor; VP16, TFIIH, Tfb1, Activation, Transcription; NMR {Saccharomyces cerevisiae}",13.7
+T1104,117,2,2K38_A,29.18,47.0,38,16,84,99,12,27,36,"Cupiennin-1a; ANTIBACTERIAL, MEMBRANE ACTIVE, Amidation, Antibiotic; NMR {Cupiennius salei}",13.7
+T1104,117,3,5TDY_A,25.32,61.0,16,19,4,22,4,22,43,"Flagellar M-ring protein, Flagellar motor; flagellar motor, switch complex, MOTOR; HET: MSE; 2.105A {Thermotoga maritima}",16.2
+T1122,241,1,1WTE_A,41.16,22.0,19,37,137,173,121,169,272,"EcoO109IR/DNA Complex; Restriction endonuclease, DNA complex, hydrolase-DNA; 1.9A {Escherichia coli} SCOP: c.52.1.29",15.4
+T1122,241,2,1FSH_A,22.86,73.0,20,20,44,63,46,65,105,"STRUCTURAL BASIS OF THE RECOGNITION; three-helix bundle, beta-arm, DISHEVELLED-1, SEGMENT; NMR {Mus musculus} SCOP: a.4.5.31",8.3
+T1122,241,3,2GHR_A,22.3,76.0,17,35,140,174,115,150,302,"Homoserine O-succinyltransferase (E.C.2.3.1.46); NP_981826.1, HOMOSERINE O-SUCCINYLTRANSFERASE, Structural Genomics; 2.4A {Bacillus cereus} SCOP: c.23.16.8",14.5
+T1155,116,1,2FM9_A,89.0,0.19,26,62,10,72,23,86,215,"Cell invasion protein sipA; Salmonella, type II secretion, SipA; 2.0A {Salmonella typhimurium} SCOP: a.257.1.1",54.3
+T1155,116,2,2FM8_C,88.62,0.21,26,62,10,72,49,112,240,"Surface presentation of antigens protein; type III secretion, chaperone, translocation; 2.2A {Salmonella typhimurium} SCOP: a.257.1.1",54.3
+T1155,116,3,5LSI_E,77.19,1.6,20,46,28,73,19,73,76,"Kinetochore-associated protein DSN1 homolog, Kinetochore-associated; ALPHA-HELICAL, cell cycle; 2.002A {Homo sapiens}",39.7

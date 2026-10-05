@@ -1,0 +1,17 @@
+# Conda environment used for MODELLER, PyMOL, TM-align and the Python scripts.
+# On Hellbender this is the "tbm_tools" env. MODELLER needs a free academic
+# license key: set KEY_MODELLER=<your key> before creating the env.
+# Create with: conda env create -f environment.yml
+name: tbm_tools
+channels:
+  - salilab
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11.16
+  - modeller=10.8
+  - biopython=1.88
+  - numpy=2.4.6
+  - matplotlib=3.11.2
+  - pymol-open-source=3.1.0
+  - tmalign=20240303

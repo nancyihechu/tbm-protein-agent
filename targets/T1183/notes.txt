@@ -1,0 +1,18 @@
+T1183: T1183 TsaB, 200 residues
+Length 200; modeled residues 1-200
+
+Templates:
+  6N9A_B (hhsearch hit 1): prob 100.0, E 8.2e-35, identity 24%, query 1-199; tRNA threonylcarbamoyladenosine biosynthesis protein TsaB, 2.5 A
+  6S84_C (hhsearch hit 3): prob 100.0, E 2.4e-34, identity 25%, query 1-199; tRNA N6-adenosine threonylcarbamoyltransferase (E.C.2.3.1.234), ATPase, 2.89 A
+  2A6A_A (hhsearch hit 5): prob 99.9, E 2.4e-32, identity 25%, query 1-199; hypothetical protein TM0874, 2.5 A
+  Choice: Full-length hits >= 95% prob with the highest identity: 6N9A_B, 6S84_C, 2A6A_A (24-25%). 6N9A_D (26%) left out: covers only 1-114 and is a different protein (TsaD).
+
+Best TBM model: tbm_models/T1183.B99990005.pdb (DOPE -21673.1, GA341 1.000)
+AF3 top model: af3_model/t1183/t1183_model.cif (mean pLDDT 93.2, pTM 0.9)
+TBM vs AF3: TM-score 0.744 residue-matched, 0.751 TM-align; RMSD 5.95 A residue-matched, 3.31 A TM-align over 188 residues
+
+Problems:
+  - All three templates are the same protein (T. maritima TsaB), so they add little structural diversity.
+  - HHsearch placed one or two gaps differently for 2A6A_A (near residues 10-12 and 23); 2A6A_A has 25 unresolved residues including its C-terminal tail.
+  - Identity to every template is 24-25%, below the 30% screening cutoff (screen FAIL); expect register errors.
+  - Residue 200 has no template; MODELLER built it without template restraints.

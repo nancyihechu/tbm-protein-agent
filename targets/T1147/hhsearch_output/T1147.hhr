@@ -1,0 +1,169 @@
+Query         T1147 KEK_05752, MmpS5, Mycobacterium thermoresistibile, 103 residues
+Match_columns 103
+No_of_seqs    112 out of 1009
+Neff          8.82171
+Searched_HMMs 80799
+Date          Mon Oct  5 13:04:50 2026
+Command       hhsearch -i /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1147/hhsearch_output/T1147.a3m -d /cluster/VAST/cietest/alphafold_database/pdb70/pdb70 -o /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1147/hhsearch_output/T1147.hhr -cpu 8 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2LW3_A Putative membrane prote  99.6 9.3E-20 1.2E-24  108.5   0.0   89   15-103     2-90  (90)
+  2 3MX7_A Fas apoptotic inhibitor  28.7      49  0.0006   20.3   0.0   75   10-86     13-88  (90)
+  3 4WWM_A Urm1; Ubiquitin-like, M  13.1 1.7E+02  0.0022   17.0   0.0   15   73-87     49-63  (91)
+  4 3ZYP_A CIP1; METAL BINDING PRO  10.2 2.5E+02  0.0031   19.5   0.0   18   72-89    148-165 (218)
+  5 2KGH_A Venom peptide 2; insect   9.8 2.6E+02  0.0033   14.4   0.0   12   72-83      5-16  (39)
+  6 1I25_A HUWENTOXIN-II; neurotox   9.4 2.8E+02  0.0035   14.2   0.0   20   72-91      5-25  (37)
+  7 3MX7_A Fas apoptotic inhibitor   9.2 2.9E+02  0.0035   17.0   0.0   17   71-87     26-42  (90)
+  8 3FCG_A F1 capsule-anchoring pr   8.6 3.1E+02  0.0039   16.2   0.0   21   70-90     24-44  (90)
+  9 3FCG_B F1 capsule-anchoring pr   8.6 3.1E+02  0.0039   16.2   0.0   21   70-90     24-44  (90)
+ 10 3NEK_A nitrogen repressor-like   8.5 3.2E+02   0.004   20.1   0.0   17   73-89     89-105 (238)
+
+No 1
+>2LW3_A Putative membrane protein mmpS4; MmpS4, soluble domain, Mycobacterium tuberculosis; NMR {Mycobacterium tuberculosis}
+Probab=99.63  E-value=9.3e-20  Score=108.46  Aligned_cols=89  Identities=55%  Similarity=0.989  Sum_probs=76.3  Template_Neff=7.900
+
+Q T1147            15 VVTYEIFGTPGAVVDINYLDLDARTQRVNDVTLPWSITLSTTAPSALAHIVAQGNADHIGCRIIVDGELRVESVSTGVNA   94 (103)
+Q Consensus        15 ~v~y~Vtg~~~~~~~i~y~~~~~~~~~~~~~~~pw~~~~~~~~~~~~~~v~a~~~~~~v~C~I~vdG~~v~~~~~~g~~~   94 (103)
+                      +|+|+|+++.+..+.|.|.+.++..+...++.+||++++++......+.|.+...++.++|+|+|||+++++++..|++.
+T Consensus         2 ~V~YeVtg~~~~~~~i~Y~~~~~~~~~~~~~~lPW~~t~~~~~~~~~~~l~a~~~~~~~tC~I~VdGk~v~~~t~~g~~~   81 (90)
+T 2LW3_A            2 HLTYEIFGPPGTVADISYFDVNSEPQRVDGAVLPWSLHITTNDAAVMGNIVAQGNSDSIGCRITVDGKVRAERVSNEVNA   81 (90)
+T ss_dssp             EEBCBCCCCTTCCCCCBCCCTTSCCCCCCSCSSCCBCCEECSSSCCCCCCBCCSSCSCCCCCCBBTTBCCCCCCCCCSCT
+T ss_pred             eEEEEEEeCCCCeEEEEEEcCCCCceEEeCcccCEEEEEEeCCCceeEEEEEEcCCCeEEEEEEECCEEEEEEEccCccc
+Confidence            68999999844457999998776556667899999999999887655677777778999999999999999999999889
+
+
+Q T1147            95 QTYCIEKSA  103 (103)
+Q Consensus        95 ~a~C~~~~~  103 (103)
+                      .+.|.++++
+T Consensus        82 ~~~C~~~~~   90 (90)
+T 2LW3_A           82 YTYCLVKSA   90 (90)
+T ss_dssp             TSSSCCSCC
+T ss_pred             eEEEEEeeC
+Confidence            999998874
+
+
+No 2
+>3MX7_A Fas apoptotic inhibitory molecule 1; Beta Sheet, APOPTOSIS; 1.76A {Homo sapiens}
+Probab=28.70  E-value=49  Score=20.30  Aligned_cols=75  Identities=15%  Similarity=0.073  Sum_probs=39.5  Template_Neff=5.600
+
+Q T1147            10 PFDPKVVTYEIFGTPGAVVDINYLDLDARTQRVNDVTLPWSITLSTTAPSALAHIVAQG-NADHIGCRIIVDGELRVE   86 (103)
+Q Consensus        10 ~~~~~~v~y~Vtg~~~~~~~i~y~~~~~~~~~~~~~~~pw~~~~~~~~~~~~~~v~a~~-~~~~v~C~I~vdG~~v~~   86 (103)
+                      ....|.|+|+=....+  -.+.+.|+..-....-.-.+++...|.+.+......|.... .+....+++.|||+.+.+
+T Consensus        13 ~d~~h~IefeHgt~sG--krvi~VDG~ev~r~~~~fklvg~e~F~ig~~~~kc~I~I~~~~~~~y~YsL~VnGk~~~~   88 (90)
+T 3MX7_A           13 SDGVHKIEFEHGTTSG--KRVVYVDGKEEIRKEWMFKLVGKETFYVGAAKTKATINIDAISGFAYEYTLEINGKSLKK   88 (90)
+T ss_dssp             TTEEEEEEEEECTTTC--CEEEEETTEEEEEECCCSCCCEEEEEEETTTTEEEEEEEEEETTTEEEEEEEETTEEEEE
+T ss_pred             CCCeEEEEEEEcCCcC--eEEEEECCEEEEEecccccccceEEEEeCCccCEEEEEEEeCCCCceEEEEEECCEEhhh
+Confidence            3456777776554422  34555554321112223345666667766431112232222 456788999999987653
+
+
+No 3
+>4WWM_A Urm1; Ubiquitin-like, Modifier, Archaea, signaling protein; 2.2A {Sulfolobus solfataricus}
+Probab=13.11  E-value=1.7e+02  Score=17.05  Aligned_cols=15  Identities=20%  Similarity=0.204  Sum_probs=12.1  Template_Neff=8.800
+
+Q T1147            73 IGCRIIVDGELRVES   87 (103)
+Q Consensus        73 v~C~I~vdG~~v~~~   87 (103)
+                      -.|.|+|||+.+...
+T Consensus        49 ~~~~i~vNg~~i~~~   63 (91)
+T 4WWM_A           49 SGILILINGKDWRLY   63 (91)
+T ss_dssp             TTEEEEETTEEGGGG
+T ss_pred             CcEEEEECCEeHHhh
+Confidence            368899999988764
+
+
+No 4
+>3ZYP_A CIP1; METAL BINDING PROTEIN, CALCIUM-BINDING, CBM-CONTAINING; HET: PEG, NAG; 1.5A {HYPOCREA JECORINA}
+Probab=10.21  E-value=2.5e+02  Score=19.46  Aligned_cols=18  Identities=11%  Similarity=-0.014  Sum_probs=14.4  Template_Neff=9.000
+
+Q T1147            72 HIGCRIIVDGELRVESVS   89 (103)
+Q Consensus        72 ~v~C~I~vdG~~v~~~~~   89 (103)
+                      .-++++++||+.+.+.+.
+T Consensus       148 ~G~~~vwidG~~v~~~~~  165 (218)
+T 3ZYP_A          148 DGTIETWLNGSLIPGMTV  165 (218)
+T ss_dssp             SSCEEEEETTEECGGGCB
+T ss_pred             CCcEEEEECCEEccCccc
+Confidence            558899999999887543
+
+
+No 5
+>2KGH_A Venom peptide 2; insecticidal peptides, Disulfide bond, Neurotoxin; NMR {Brachypelma ruhnaui}
+Probab=9.77  E-value=2.6e+02  Score=14.44  Aligned_cols=12  Identities=25%  Similarity=0.529  Sum_probs=9.4  Template_Neff=1.900
+
+Q T1147            72 HIGCRIIVDGEL   83 (103)
+Q Consensus        72 ~v~C~I~vdG~~   83 (103)
+                      .++|.|..+|+.
+T Consensus         5 ~~sCdIek~Gkp   16 (39)
+T 2KGH_A            5 VFSCDIKKEGKP   16 (39)
+T ss_pred             EEEeeeeeCCee
+Confidence            368999999973
+
+
+No 6
+>1I25_A HUWENTOXIN-II; neurotoxin, insecticidal toxin, disulfide bonds; NMR {Ornithoctonus huwena} SCOP: g.3.6.2
+Probab=9.36  E-value=2.8e+02  Score=14.18  Aligned_cols=20  Identities=20%  Similarity=0.391  Sum_probs=13.0  Template_Neff=1.900
+
+Q T1147            72 HIGCRIIVDG-ELRVESVSTG   91 (103)
+Q Consensus        72 ~v~C~I~vdG-~~v~~~~~~g   91 (103)
+                      .++|.|..+| +.-.....+|
+T Consensus         5 ~~sCdIek~G~Kpck~kkc~G   25 (37)
+T 1I25_A            5 SFSCEIEKEGDKPCKKKKCKG   25 (37)
+T ss_dssp             SSCSSSSBCSSSBCBCCCCCT
+T ss_pred             EEeceeeeCCCCCCCCCccCc
+Confidence            3689999999 4544444444
+
+
+No 7
+>3MX7_A Fas apoptotic inhibitory molecule 1; Beta Sheet, APOPTOSIS; 1.76A {Homo sapiens}
+Probab=9.23  E-value=2.9e+02  Score=17.03  Aligned_cols=17  Identities=18%  Similarity=0.188  Sum_probs=11.7  Template_Neff=5.600
+
+Q T1147            71 DHIGCRIIVDGELRVES   87 (103)
+Q Consensus        71 ~~v~C~I~vdG~~v~~~   87 (103)
+                      ..-...|.|||+.+.+.
+T Consensus        26 ~sGkrvi~VDG~ev~r~   42 (90)
+T 3MX7_A           26 TSGKRVVYVDGKEEIRK   42 (90)
+T ss_dssp             TTCCEEEEETTEEEEEE
+T ss_pred             CcCeEEEEECCEEEEEe
+Confidence            34456788999977653
+
+
+No 8
+>3FCG_A F1 capsule-anchoring protein; beta barrel, beta strand swapping; 2.85A {Yersinia pestis}
+Probab=8.63  E-value=3.1e+02  Score=16.21  Aligned_cols=21  Identities=10%  Similarity=0.151  Sum_probs=15.9  Template_Neff=8.000
+
+Q T1147            70 ADHIGCRIIVDGELRVESVST   90 (103)
+Q Consensus        70 ~~~v~C~I~vdG~~v~~~~~~   90 (103)
+                      ....+.+|++||+.+.+....
+T Consensus        24 ~~~s~Vev~~ng~~i~~~~v~   44 (90)
+T 3FCG_A           24 RTQARVEVLRDGYTVSNELVP   44 (90)
+T ss_dssp             SSSEEEEEESSSCEEEEEEEC
+T ss_pred             cCCCEEEEEECCEEEEEEEcC
+Confidence            345678889999988877654
+
+
+No 9
+>3FCG_B F1 capsule-anchoring protein; beta barrel, beta strand swapping; 2.85A {Yersinia pestis}
+Probab=8.63  E-value=3.1e+02  Score=16.21  Aligned_cols=21  Identities=10%  Similarity=0.151  Sum_probs=15.9  Template_Neff=8.000
+
+Q T1147            70 ADHIGCRIIVDGELRVESVST   90 (103)
+Q Consensus        70 ~~~v~C~I~vdG~~v~~~~~~   90 (103)
+                      ....+.+|++||+.+.+....
+T Consensus        24 ~~~s~Vev~~ng~~i~~~~v~   44 (90)
+T 3FCG_B           24 RTQARVEVLRDGYTVSNELVP   44 (90)
+T ss_dssp             SSSEEEEEEETTEEEEEEEEC
+T ss_pred             cCCCEEEEEECCEEEEEEEcC
+Confidence            345678889999988877654
+
+
+No 10
+>3NEK_A nitrogen repressor-like protein MJ0159; STRUCTURAL GENOMICS, UNKNOWN FUNCTION, PSI-2; HET: MSE, GOL; 2.5A {Methanocaldococcus jannaschii}
+Probab=8.50  E-value=3.2e+02  Score=20.15  Aligned_cols=17  Identities=29%  Similarity=0.460  Sum_probs=13.7  Template_Neff=5.300
+
+Q T1147            73 IGCRIIVDGELRVESVS   89 (103)
+Q Consensus        73 v~C~I~vdG~~v~~~~~   89 (103)
+                      --|+|++||-.++..-.
+T Consensus        89 TvCSiTiDGvLlk~GIp  105 (238)
+T 3NEK_A           89 TICAVTLDGIFLRNSVP  105 (238)
+T ss_dssp             EECTHHHHHHHHHTTCC
+T ss_pred             EeCceehhHHHHHcCCC
+Confidence            47999999988876654
+
+

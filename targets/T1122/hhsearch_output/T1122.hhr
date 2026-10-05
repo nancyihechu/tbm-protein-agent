@@ -1,0 +1,158 @@
+Query         T1122 A0A0B4VFQ3, Tipula oleracea nudivirus, 241 residues
+Match_columns 241
+No_of_seqs    1 out of 1
+Neff          1
+Searched_HMMs 80799
+Date          Mon Oct  5 12:25:16 2026
+Command       hhsearch -i /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1122/hhsearch_output/T1122.a3m -d /cluster/VAST/cietest/alphafold_database/pdb70/pdb70 -o /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1122/hhsearch_output/T1122.hhr -cpu 8 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 1WTE_A EcoO109IR/DNA Complex;   41.2      22 0.00028   33.1   0.0   37  137-173   121-169 (272)
+  2 1FSH_A STRUCTURAL BASIS OF THE  22.9      73 0.00091   22.6   0.0   20   44-63     46-65  (105)
+  3 2GHR_A Homoserine O-succinyltr  22.3      76 0.00094   27.1   0.0   35  140-174   115-150 (302)
+  4 1UHW_A pleckstrin; THREE-HELIX  22.3      76 0.00095   22.8   0.0   27   43-69     32-63  (109)
+  5 6MTG_A Homoserine O-succinyltr  19.6      95  0.0012   26.7   0.0   34  140-173   114-148 (302)
+  6 6MTG_B Homoserine O-succinyltr  18.1 1.1E+02  0.0013   26.4   0.0   34  140-173   114-148 (302)
+  7 2VDJ_A HOMOSERINE O-SUCCINYLTR  16.1 1.3E+02  0.0016   25.7   0.0   16  160-175   135-150 (301)
+  8 5SUY_D Segment polarity protei  13.8 1.6E+02   0.002   20.0   0.0   19   44-62     35-53  (97)
+  9 1SAU_A sulfite reductase, desu  12.7 1.8E+02  0.0023   23.9   0.0   19  146-164    43-61  (115)
+ 10 2A5W_A sulfite reductase, desu  12.7 1.8E+02  0.0023   23.9   0.0   19  146-164    43-61  (115)
+
+No 1
+>1WTE_A EcoO109IR/DNA Complex; Restriction endonuclease, DNA complex, hydrolase-DNA; 1.9A {Escherichia coli} SCOP: c.52.1.29
+Probab=41.16  E-value=22  Score=33.08  Aligned_cols=37  Identities=19%  Similarity=0.247  Sum_probs=22.5  Template_Neff=4.800
+
+Q T1122           137 LICDFKNTP-WINLSK------EHKKIYEL-----VRGIFGICYGEKDY  173 (241)
+Q Consensus       137 licdfkntp-winlsk------ehkkiyel-----vrgifgicygekdy  173 (241)
+                      -+|..|.-| |+|.+.      .-+++...     ...++|+|||++.-
+T Consensus       121 y~~~iKSGpnt~N~dq~~~~k~~f~~i~~~~~~~~~~av~G~~YG~~~~  169 (272)
+T 1WTE_A          121 ELLSLKAGKWTIQLTMAVQLNKAFHEIINNYPGVADNIVVGVFYGNSHG  169 (272)
+T ss_dssp             EEEEEESSTTSCCHHHHHHHHHHHHHHHHHCGGGCSEEEEEECSSCSTT
+T ss_pred             EEEEeeccCCCCCHHHHHHHHHHHHHHHhcCCCCCceEEEEEEeccCCC
+Confidence            467777777 577662      11222221     45689999998754
+
+
+No 2
+>1FSH_A STRUCTURAL BASIS OF THE RECOGNITION; three-helix bundle, beta-arm, DISHEVELLED-1, SEGMENT; NMR {Mus musculus} SCOP: a.4.5.31
+Probab=22.86  E-value=73  Score=22.59  Aligned_cols=20  Identities=20%  Similarity=0.456  Sum_probs=17.2  Template_Neff=9.100
+
+Q T1122            44 QFDHVFIKSDFKTWLAHNQD   63 (241)
+Q Consensus        44 qfdhvfiksdfktwlahnqd   63 (241)
+                      .+.++|.-+++-.||..+.+
+T Consensus        46 ~~~~~F~G~~~v~WL~~~~~   65 (105)
+T 1FSH_A           46 TIANAVIGADVVDWLYTHVE   65 (105)
+T ss_dssp             EESSCCHHHHHHHHHHHHCC
+T ss_pred             ecccceeHHHHHHHHHHcCC
+Confidence            57789999999999998863
+
+
+No 3
+>2GHR_A Homoserine O-succinyltransferase (E.C.2.3.1.46); NP_981826.1, HOMOSERINE O-SUCCINYLTRANSFERASE, Structural Genomics; 2.4A {Bacillus cereus} SCOP: c.23.16.8
+Probab=22.30  E-value=76  Score=27.12  Aligned_cols=35  Identities=17%  Similarity=0.297  Sum_probs=19.0  Template_Neff=8.700
+
+Q T1122           140 DFKNTPWIN-LSKEHKKIYELVRGIFGICYGEKDYN  174 (241)
+Q Consensus       140 dfkntpwin-lskehkkiyelvrgifgicygekdyn  174 (241)
+                      ++...||+. +.+--+...+.-.-++|||+|-.-..
+T Consensus       115 ~~~~~~~~~~~~~li~~~~~~~iPilGiC~G~Qlla  150 (302)
+T 2GHR_A          115 SFEEVDYWEELKRIMEYSKTNVTSTLHICWGAQAGL  150 (302)
+T ss_dssp             CGGGSTTHHHHHHHHHHHHHHEEEEEEETHHHHHHH
+T ss_pred             ChhhCchHHHHHHHHHHHHHcCCcEEEECHHHHHHH
+Confidence            344566644 22222223344467899999875443
+
+
+No 4
+>1UHW_A pleckstrin; THREE-HELIX BUNDLE, BETA-ARM, PLECKSTRIN, RIKEN; NMR {Mus musculus} SCOP: a.4.5.31
+Probab=22.28  E-value=76  Score=22.84  Aligned_cols=27  Identities=26%  Similarity=0.583  Sum_probs=20.8  Template_Neff=8.900
+
+Q T1122            43 IQFDHVFIKSDFKTWLAHN-----QDEAILLI   69 (241)
+Q Consensus        43 iqfdhvfiksdfktwlahn-----qdeailli   69 (241)
+                      -.+.++|.-+|+-.||..|     ..||+.+.
+T Consensus        32 ~~~~~~F~G~d~v~WL~~~~~~~~r~eA~~~~   63 (109)
+T 1UHW_A           32 KVFNHCLTGSGVIDWLVSNKLVRNRQEGLMIS   63 (109)
+T ss_pred             EecCCcEEHHHHHHHHHHcCCCCCHHHHHHHH
+Confidence            4678999999999999987     34555444
+
+
+No 5
+>6MTG_A Homoserine O-succinyltransferase (E.C.2.3.1.46); noncanonical amino acid, isothiocyanate, crosslink; HET: CSD, PEG, FMT; 1.85A {Escherichia coli (strain K12)}
+Probab=19.59  E-value=95  Score=26.67  Aligned_cols=34  Identities=6%  Similarity=0.103  Sum_probs=18.4  Template_Neff=8.600
+
+Q T1122           140 DFKNTPWINL-SKEHKKIYELVRGIFGICYGEKDY  173 (241)
+Q Consensus       140 dfkntpwinl-skehkkiyelvrgifgicygekdy  173 (241)
+                      |+...||..- .+.-+...+.-.-++|||+|-.-.
+T Consensus       114 ~~~~~~~~~~~~~~i~~~~~~~~PvlGIC~G~Q~l  148 (302)
+T 6MTG_A          114 EFNDVAYWPQIKQVLEWSKDHVTSTLFVAWAVQAA  148 (302)
+T ss_dssp             CGGGCTTHHHHHHHHHHHHHHEEEEEEETHHHHHH
+T ss_pred             chhcCchHHHHHHHHHHHHHcCCeEEEecHHHHHH
+Confidence            4555666542 111222233446789999996443
+
+
+No 6
+>6MTG_B Homoserine O-succinyltransferase (E.C.2.3.1.46); noncanonical amino acid, isothiocyanate, crosslink; HET: PEG, FMT, CSD; 1.85A {Escherichia coli (strain K12)}
+Probab=18.14  E-value=1.1e+02  Score=26.37  Aligned_cols=34  Identities=6%  Similarity=0.103  Sum_probs=18.0  Template_Neff=8.600
+
+Q T1122           140 DFKNTPWINL-SKEHKKIYELVRGIFGICYGEKDY  173 (241)
+Q Consensus       140 dfkntpwinl-skehkkiyelvrgifgicygekdy  173 (241)
+                      |+...||+.- .+--+...+.-.-++|||+|-.-.
+T Consensus       114 ~~~~~~~~~~~~~~i~~~~~~~~PvLGIC~G~Q~l  148 (302)
+T 6MTG_B          114 EFNDVAYWPQIKQVLEWSKDHVTSTLFVAWAVQAA  148 (302)
+T ss_pred             ccccCchHHHHHHHHHHHHHcCCCEEEeCHHHHHH
+Confidence            4555666532 111222223345689999996443
+
+
+No 7
+>2VDJ_A HOMOSERINE O-SUCCINYLTRANSFERASE (E.C.2.3.1.46); METHIONINE BIOSYNTHESIS, AMINO-ACID BIOSYNTHESIS, HOMOSERINE; 2.0A {BACILLUS CEREUS}
+Probab=16.11  E-value=1.3e+02  Score=25.71  Aligned_cols=16  Identities=25%  Similarity=0.463  Sum_probs=11.3  Template_Neff=8.800
+
+Q T1122           160 VRGIFGICYGEKDYNR  175 (241)
+Q Consensus       160 vrgifgicygekdynr  175 (241)
+                      -.-++|||+|-.-..+
+T Consensus       135 ~~PilGiC~G~Qlla~  150 (301)
+T 2VDJ_A          135 VTSTLHICWGAQAGLY  150 (301)
+T ss_dssp             EEEEEEETHHHHHHHH
+T ss_pred             CCeEEEECHHHHHHHH
+Confidence            4578999998754433
+
+
+No 8
+>5SUY_D Segment polarity protein dishevelled homolog; Dishevelled, DEP domain, WNT signalling; HET: SO4; 1.88A {Homo sapiens}
+Probab=13.79  E-value=1.6e+02  Score=20.02  Aligned_cols=19  Identities=32%  Similarity=0.655  Sum_probs=16.4  Template_Neff=9.700
+
+Q T1122            44 QFDHVFIKSDFKTWLAHNQ   62 (241)
+Q Consensus        44 qfdhvfiksdfktwlahnq   62 (241)
+                      .+.++|.-+|+-.||..+.
+T Consensus        35 ~~~~~F~g~d~v~WL~~~~   53 (97)
+T 5SUY_D           35 TIPNAFLGSDVVDWLYHHV   53 (97)
+T ss_dssp             CCTTBEEHHHHHHHHHHHS
+T ss_pred             ccCCcEEHHHHHHHHHHcc
+Confidence            4678999999999999884
+
+
+No 9
+>1SAU_A sulfite reductase, desulfoviridin-type subunit gamma; ORTHOGONAL HELICAL BUNDLE, OXIDOREDUCTASE; 1.12A {Archaeoglobus fulgidus}
+Probab=12.72  E-value=1.8e+02  Score=23.85  Aligned_cols=19  Identities=42%  Similarity=0.571  Sum_probs=16.2  Template_Neff=5.500
+
+Q T1122           146 WINLSKEHKKIYELVRGIF  164 (241)
+Q Consensus       146 winlskehkkiyelvrgif  164 (241)
+                      -|.||++|-+|.+.+|..|
+T Consensus        43 ~i~Lte~HW~vI~flR~~Y   61 (115)
+T 1SAU_A           43 PIELTEEHWKIIRYLRDYF   61 (115)
+T ss_dssp             CCCCCHHHHHHHHHHHHHH
+T ss_pred             CccCCHHHHHHHHHHHHHH
+Confidence            3689999999999999754
+
+
+No 10
+>2A5W_A sulfite reductase, desulfoviridin-type subunit gamma; orthogonal helix bundle, OXIDOREDUCTASE; HET: SO4; 2.1A {Archaeoglobus fulgidus}
+Probab=12.72  E-value=1.8e+02  Score=23.85  Aligned_cols=19  Identities=42%  Similarity=0.571  Sum_probs=16.2  Template_Neff=5.500
+
+Q T1122           146 WINLSKEHKKIYELVRGIF  164 (241)
+Q Consensus       146 winlskehkkiyelvrgif  164 (241)
+                      -|.||++|-+|.+.+|..|
+T Consensus        43 ~i~Lte~HW~vI~flR~~Y   61 (115)
+T 2A5W_A           43 PIELTEEHWKIIRYLRDYF   61 (115)
+T ss_dssp             CCCCCHHHHHHHHHHHHHH
+T ss_pred             CccCCHHHHHHHHHHHHHH
+Confidence            3689999999999999754
+
+

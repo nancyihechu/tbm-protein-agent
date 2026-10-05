@@ -1,0 +1,10 @@
+TBM model : /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/tbm_models/T1183.B99990005.pdb (200 residues)
+AF3 model : /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/t1183/t1183_model.cif (200 residues)
+TM-score (normalized by TBM length) : 0.7514
+TM-score (normalized by AF3 length) : 0.7514
+RMSD (TM-align, aligned residues)   : 3.31 A
+Aligned length                      : 188
+Aligned pairs within 5 A            : 157
+Sequence identity of aligned pairs  : 0.920
+AF3 mean pLDDT (all / aligned)      : 93.2 / 93.9
+Results: /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/comparison/T1183.B99990005_vs_t1183_model

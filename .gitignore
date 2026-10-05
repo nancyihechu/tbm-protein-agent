@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+
+# SLURM logs (job-specific; key results are summarized in notes.txt and metadata.json)
+slurm-*.out
+
+# Conda environments, databases and model weights (live on Hellbender, never in the repo)
+envs/
+.conda/
+*.sif
+af3.bin
+af3.bin.zst
+*.ffdata
+*.ffindex
+
+# AlphaFold3 intermediates: MSA/template features and per-sample full PAE matrices
+*_data.json
+**/seed-*/confidences.json
+tmp_*/
+
+# MODELLER intermediates (restraints, schedules, violation profiles)
+*.rsr
+*.sch
+*.ini
+*.D0000*
+*.V9999*
+
+# Scratch files from the comparison report
+**/comparison_results/presentation/work/

@@ -1,0 +1,160 @@
+Query         T1104 EntV136, Enterococcus faecalis, 117 residues
+Match_columns 117
+No_of_seqs    106 out of 255
+Neff          7.19962
+Searched_HMMs 80799
+Date          Mon Oct  5 12:25:30 2026
+Command       hhsearch -i /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1104/hhsearch_output/T1104.a3m -d /cluster/VAST/cietest/alphafold_database/pdb70/pdb70 -o /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1104/hhsearch_output/T1104.hhr -cpu 8 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 2K2U_B RNA polymerase II trans  46.9      16  0.0002   20.4   0.0   16   13-28     19-34  (35)
+  2 2K38_A Cupiennin-1a; ANTIBACTE  29.2      47 0.00058   18.3   0.0   16   84-99     12-27  (36)
+  3 5TDY_A Flagellar M-ring protei  25.3      61 0.00076   18.5   0.0   19    4-22      4-22  (43)
+  4 5TDY_C Flagellar M-ring protei  25.3      61 0.00076   18.5   0.0   19    4-22      4-22  (43)
+  5 1S29_A La protein; winged heli  12.4 1.9E+02  0.0023   19.1   0.0   20    3-22      7-26  (92)
+  6 1G6U_B DOMAIN SWAPPED DIMER; d  11.6 2.1E+02  0.0026   16.8   0.0   18   31-48     13-30  (48)
+  7 2M5W_A Lupus La protein; Lupus  11.5 2.1E+02  0.0026   18.8   0.0   20    3-22      2-21  (91)
+  8 2CQK_A C-Mpl binding protein;    9.0   3E+02  0.0037   18.7   0.0   20    4-23     12-31  (101)
+  9 5IC9_D Putative uncharacterize   8.9   3E+02  0.0037   20.8   0.0   22   71-92      6-27  (175)
+ 10 3OAO_A uncharacterized protein   8.9   3E+02  0.0037   19.4   0.0   21   31-51     76-96  (147)
+
+No 1
+>2K2U_B RNA polymerase II transcription factor; VP16, TFIIH, Tfb1, Activation, Transcription; NMR {Saccharomyces cerevisiae}
+Probab=46.88  E-value=16  Score=20.36  Aligned_cols=16  Identities=19%  Similarity=0.559  Sum_probs=12.9  Template_Neff=1.800
+
+Q T1104            13 GLEEMYANGVTEDNFK   28 (117)
+Q Consensus        13 ~Le~if~~a~~~d~~g   28 (117)
+                      ++|.+|+++.-.|+.|
+T Consensus        19 EFEQMFtdaLgiD~~~   34 (35)
+T 2K2U_B           19 EFEQMFTDALGIDEYG   34 (35)
+T ss_dssp             HHHHTTSCCCCCCSSC
+T ss_pred             hHHHHHHHHhCCcccC
+Confidence            4677999999888765
+
+
+No 2
+>2K38_A Cupiennin-1a; ANTIBACTERIAL, MEMBRANE ACTIVE, Amidation, Antibiotic; NMR {Cupiennius salei}
+Probab=29.18  E-value=47  Score=18.27  Aligned_cols=16  Identities=38%  Similarity=0.405  Sum_probs=9.4  Template_Neff=1.000
+
+Q T1104            84 ELAVTVLRFAKANGLK   99 (117)
+Q Consensus        84 ~aA~~i~k~~~k~giK   99 (117)
+                      +.|+.+.|.++|+|.|
+T Consensus        12 kvaktvakqaakqgak   27 (36)
+T 2K38_A           12 KVAKTVAKQAAKQGAK   27 (36)
+T ss_dssp             THHHHTTTCTTTTTSS
+T ss_pred             HHHHHHHHHHHHhchh
+Confidence            4556666666666654
+
+
+No 3
+>5TDY_A Flagellar M-ring protein, Flagellar motor; flagellar motor, switch complex, MOTOR; HET: MSE; 2.105A {Thermotoga maritima}
+Probab=25.32  E-value=61  Score=18.51  Aligned_cols=19  Identities=16%  Similarity=0.396  Sum_probs=13.3  Template_Neff=1.000
+
+Q T1104             4 DSEVEAVAKGLEEMYANGV   22 (117)
+Q Consensus         4 e~~~~elA~~Le~if~~a~   22 (117)
+                      +.+.-+|-++|+.||.+.-
+T Consensus         4 ekellelleelenifsrsp   22 (43)
+T 5TDY_A            4 EKELLELLEELENIFSRSP   22 (43)
+T ss_dssp             HHHHHHHHHHHHHHHHHCH
+T ss_pred             HHHHHHHHHHHHHHhcCCH
+Confidence            4455567788888887654
+
+
+No 4
+>5TDY_C Flagellar M-ring protein, Flagellar motor; flagellar motor, switch complex, MOTOR; HET: MSE; 2.105A {Thermotoga maritima}
+Probab=25.32  E-value=61  Score=18.51  Aligned_cols=19  Identities=16%  Similarity=0.396  Sum_probs=13.3  Template_Neff=1.000
+
+Q T1104             4 DSEVEAVAKGLEEMYANGV   22 (117)
+Q Consensus         4 e~~~~elA~~Le~if~~a~   22 (117)
+                      +.+.-+|-++|+.||.+.-
+T Consensus         4 ekellelleelenifsrsp   22 (43)
+T 5TDY_C            4 EKELLELLEELENIFSRSP   22 (43)
+T ss_dssp             HHHHHHHHHHHHHHHTSCH
+T ss_pred             HHHHHHHHHHHHHHhcCCH
+Confidence            4455567788888887654
+
+
+No 5
+>1S29_A La protein; winged helix-turn-helix, autoantigen, RNA-binding, RNA; 1.6A {Trypanosoma brucei} SCOP: a.4.5.46
+Probab=12.41  E-value=1.9e+02  Score=19.08  Aligned_cols=20  Identities=10%  Similarity=0.159  Sum_probs=15.4  Template_Neff=7.500
+
+Q T1104             3 EDSEVEAVAKGLEEMYANGV   22 (117)
+Q Consensus         3 ~e~~~~elA~~Le~if~~a~   22 (117)
+                      +++..+.+..++||+|...-
+T Consensus         7 ~~~~~~~i~~QvE~YFSd~N   26 (92)
+T 1S29_A            7 SSENKQKLQKQVEFYFSDVN   26 (92)
+T ss_dssp             CHHHHHHHHHHHHHHTSHHH
+T ss_pred             CHHHHHHHHHHHHHHhChhh
+Confidence            45566778889999998765
+
+
+No 6
+>1G6U_B DOMAIN SWAPPED DIMER; designed three helix bundle, DE; 1.48A {N/A} SCOP: k.9.1.1
+Probab=11.55  E-value=2.1e+02  Score=16.79  Aligned_cols=18  Identities=33%  Similarity=0.647  Sum_probs=12.1  Template_Neff=1.000
+
+Q T1104            31 VKNNFAQQEISSVEEELN   48 (117)
+Q Consensus        31 ~~~~~~~~e~~~l~~~~~   48 (117)
+                      .++.|+++|+..|+..+.
+T Consensus        13 kkegfspeelaaleselq   30 (48)
+T 1G6U_B           13 KKEGFSPEELAALESELQ   30 (48)
+T ss_dssp             HTTTCSHHHHHHHHHHHH
+T ss_pred             HHcCCCHHHHHHHHHHHH
+Confidence            345668888887776654
+
+
+No 7
+>2M5W_A Lupus La protein; Lupus protein, La motif, RNA; NMR {Dictyostelium discoideum}
+Probab=11.49  E-value=2.1e+02  Score=18.77  Aligned_cols=20  Identities=10%  Similarity=0.250  Sum_probs=15.3  Template_Neff=7.600
+
+Q T1104             3 EDSEVEAVAKGLEEMYANGV   22 (117)
+Q Consensus         3 ~e~~~~elA~~Le~if~~a~   22 (117)
+                      +++..+.+..++||+|...-
+T Consensus         2 ~~~~~~~i~~QlE~yFS~~N   21 (91)
+T 2M5W_A            2 SEETSTQILKQVEYYFSDSN   21 (91)
+T ss_dssp             HHHHHHHHHHHHHHHHHTTC
+T ss_pred             CHHHHHHHHHHHHHHhCccc
+Confidence            45566778889999998766
+
+
+No 8
+>2CQK_A C-Mpl binding protein; La domain, Structural Genomics, NPPSFA; NMR {Homo sapiens} SCOP: a.4.5.46
+Probab=8.95  E-value=3e+02  Score=18.71  Aligned_cols=20  Identities=20%  Similarity=0.192  Sum_probs=14.7  Template_Neff=6.900
+
+Q T1104             4 DSEVEAVAKGLEEMYANGVT   23 (117)
+Q Consensus         4 e~~~~elA~~Le~if~~a~~   23 (117)
+                      +...+.+.+++||+|...-.
+T Consensus        12 ~~~~~~I~~QvE~YFSd~NL   31 (101)
+T 2CQK_A           12 EDLKECLKKQLEFCFSRENL   31 (101)
+T ss_dssp             HHHHHHHHHHHHHHTSHHHH
+T ss_pred             HHHHHHHHHHHHHHcCHHHh
+Confidence            34556678899999987763
+
+
+No 9
+>5IC9_D Putative uncharacterized protein; solenoid structure, rRNA processing, 90S; 3.7A {Chaetomium thermophilum (strain DSM 1495 / CBS 144.50 / IMI 039719)}
+Probab=8.92  E-value=3e+02  Score=20.83  Aligned_cols=22  Identities=14%  Similarity=0.286  Sum_probs=0.0  Template_Neff=6.500
+
+Q T1104            71 SAIVKAAQKKAWKELAVTVLRF   92 (117)
+Q Consensus        71 ~~i~~~i~~k~w~~aA~~i~k~   92 (117)
+                      ..+..+++.|+|.+|..+-++.
+T Consensus         6 Q~L~Nll~~k~y~~Al~LAl~L   27 (175)
+T 5IC9_D            6 QTLENYIHAGAYRDAIVLALQL   27 (175)
+T ss_dssp             ----------------------
+T ss_pred             HHHHHHHHcCCHHHHHHHHHHC
+Confidence            3566889999999998876554
+
+
+No 10
+>3OAO_A uncharacterized protein from DUF2059 family; STRUCTURAL GENOMICS, JOINT CENTER FOR; HET: PO4; 2.72A {Pseudomonas aeruginosa}
+Probab=8.85  E-value=3e+02  Score=19.38  Aligned_cols=21  Identities=14%  Similarity=0.322  Sum_probs=16.6  Template_Neff=8.700
+
+Q T1104            31 VKNNFAQQEISSVEEELNVNI   51 (117)
+Q Consensus        31 ~~~~~~~~e~~~l~~~~~~~~   51 (117)
+                      ..++|+.+|++.|..+++++.
+T Consensus        76 y~~~fT~eEl~~li~FY~SP~   96 (147)
+T 3OAO_A           76 YTTNFTESELKDLNAFYQSPL   96 (147)
+T ss_dssp             HHHHSCHHHHHHHHHHHHSHH
+T ss_pred             HHhcCCHHHHHHHHHHHhCHH
+Confidence            566778889999888887764
+
+

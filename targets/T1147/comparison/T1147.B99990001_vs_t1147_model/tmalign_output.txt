@@ -1,0 +1,24 @@
+
+ **********************************************************************
+ * TM-align (Version 20240303): protein and RNA structure alignment   *
+ * References: Y Zhang, J Skolnick. Nucl Acids Res 33, 2302-9 (2005)  *
+ *             S Gong, C Zhang, Y Zhang. Bioinformatics, bz282 (2019) *
+ * Please email comments and suggestions to yangzhanglab@umich.edu    *
+ **********************************************************************
+
+Name of Structure_1: /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1147/comparison/T1147.B99990001_vs_t1147_model/tbm.pdb (to be superimposed onto Structure_2)
+Name of Structure_2: /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1147/comparison/T1147.B99990001_vs_t1147_model/af3.pdb
+Length of Structure_1: 103 residues
+Length of Structure_2: 103 residues
+
+Aligned length= 90, RMSD=   2.85, Seq_ID=n_identical/n_aligned= 0.711
+TM-score= 0.62892 (normalized by length of Structure_1: L=103, d0=3.72)
+TM-score= 0.62892 (normalized by length of Structure_2: L=103, d0=3.72)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+----G-PLGSDDPEPFDPKVVTYEIFGTPGAVVDINYLD-LDARTQRVNDVTLPWSITLSTTAPSALAHIVAQGNADHIGCRIIVDGELRVESVSTGVNAQTYCIEKSA-------
+    . :..     .:::::::::::::::::::::::: :.:.::::: ::::::::::::::::::::::::::::::::::::::: :::::::::::..             
+GPLGSDDPE-----PFDPKVVTYEIFGTPGAVVDINYLDLDARTQRVND-VTLPWSITLSTTAPSALAHIVAQGNADHIGCRIIVDGEL-RVESVSTGVNAQT------YCIEKSA
+
+#Total CPU time is  0.01 seconds

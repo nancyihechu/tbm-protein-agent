@@ -1,0 +1,106 @@
+{
+  "target": "T1133",
+  "description": "T1133 Q9BY44, homo sapiens, 585 residues",
+  "length": 585,
+  "fasta": "T1133.fasta",
+  "created": "2026-10-05",
+  "template_search": {
+    "hhblits_db": "UniRef30_2020_06",
+    "hhsearch_db": "pdb70 (2020-04)",
+    "hhr": "hhsearch_output/T1133.hhr",
+    "choice": "3WJ9_B only (hit 3; S. pombe eIF2A, 37% identity); 6GSN_p and 6GSM_p excluded as instructed."
+  },
+  "templates": [
+    {
+      "pdb_chain": "3WJ9_B",
+      "hhsearch_rank": 3,
+      "probability": 99.93,
+      "evalue": 1.1e-30,
+      "identity_pct": 37,
+      "query_range": [
+        5,
+        418
+      ],
+      "template_seqres_range": [
+        3,
+        411
+      ],
+      "resolution_A": 2.506,
+      "protein": "Eukaryotic translation initiation factor 2A",
+      "file": "templates/3wj9_B.pdb"
+    }
+  ],
+  "modeled_range": [
+    5,
+    418
+  ],
+  "alignment": "alignment/T1133.pir",
+  "modeller": {
+    "version": "10.8",
+    "n_models": 5,
+    "slurm_job": "18319199",
+    "models": [
+      {
+        "file": "tbm_models/T1133.B99990001.pdb",
+        "dope": -41664.547,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1133.B99990002.pdb",
+        "dope": -41097.906,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1133.B99990003.pdb",
+        "dope": -41572.812,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1133.B99990004.pdb",
+        "dope": -41626.137,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1133.B99990005.pdb",
+        "dope": -42136.484,
+        "ga341": 1.0
+      }
+    ],
+    "best_model": "tbm_models/T1133.B99990005.pdb",
+    "best_dope": -42136.484,
+    "best_ga341": 1.0
+  },
+  "alphafold3": {
+    "module": "alphafold3/alphafold3_v301_deepmind",
+    "slurm_job": "18319107",
+    "model": "af3_model/t1133/t1133_model.cif",
+    "seeds": 1,
+    "samples": 5,
+    "ptm": 0.78,
+    "ranking_score": 0.87,
+    "fraction_disordered": 0.18,
+    "mean_plddt": 88.45,
+    "mean_plddt_modeled_range": 95.56
+  },
+  "comparison": {
+    "dir": "comparison/T1133.B99990005_vs_t1133_model",
+    "tm_align": {
+      "tm_score_norm_tbm": 0.91698,
+      "tm_score_norm_af3": 0.65755,
+      "rmsd": 1.99,
+      "aligned_length": 403,
+      "pairs_within_5A": 393
+    },
+    "residue_matched": {
+      "tm_score": 0.8935,
+      "rmsd": 4.266,
+      "gdt_ts": 0.7409,
+      "residues_in_common": 414
+    }
+  },
+  "problems": [
+    "Modeled only the template-covered range 5-418; residues 1-4 and 419-585 are not in the TBM model.",
+    "3WJ9_B has 10 unresolved residues; they appear as gaps in the template row of the alignment.",
+    "AF3 ran on the first attempt; the unified-memory retry was not needed."
+  ]
+}

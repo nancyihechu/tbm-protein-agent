@@ -1,0 +1,157 @@
+Query         T1120 DdrC, 235 residues
+Match_columns 235
+No_of_seqs    167 out of 1627
+Neff          9.68979
+Searched_HMMs 80799
+Date          Mon Oct  5 13:05:07 2026
+Command       hhsearch -i /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1120/hhsearch_output/T1120.a3m -d /cluster/VAST/cietest/alphafold_database/pdb70/pdb70 -o /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1120/hhsearch_output/T1120.hhr -cpu 8 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 6A6W_A Bouquet formation prote  77.8     1.5 1.9E-05   33.3   0.0   54   20-74     64-127 (140)
+  2 5YBX_A Bouquet formation prote  76.6     1.7 2.1E-05   33.0   0.0   54   20-74     66-129 (142)
+  3 1MB1_A MLU1-BOX BINDING PROTEI  65.9     4.6 5.7E-05   30.2   0.0   28   13-40     19-47  (130)
+  4 1BM8_A TRANSCRIPTION FACTOR MB  50.3      13 0.00016   26.2   0.0   28   13-40     16-44  (99)
+  5 1L3G_A TRANSCRIPTION FACTOR Mb  49.2      14 0.00017   28.0   0.0   28   13-40     18-46  (136)
+  6 4UX5_B TRANSCRIPTION FACTOR MB  48.9      14 0.00018   28.0   0.0   22   19-40     39-60  (136)
+  7 2JSP_A Transcriptional regulat  21.6      80   0.001   22.1   0.0   16  161-176    43-58  (87)
+  8 2O35_A Hypothetical protein DU  13.8 1.6E+02   0.002   21.3   0.0   32  154-190    67-98  (105)
+  9 2O35_B Hypothetical protein DU  13.8 1.6E+02   0.002   21.3   0.0   32  154-190    67-98  (105)
+ 10 3FYB_A Protein of unknown func  13.1 1.8E+02  0.0022   21.1   0.0   33  153-190    65-97  (104)
+
+No 1
+>6A6W_A Bouquet formation protein 4, Spindle; Chromosome organization, Inner nuclear membrane; 2.601A {Schizosaccharomyces pombe (strain 972 / ATCC 24843)}
+Probab=77.85  E-value=1.5  Score=33.29  Aligned_cols=54  Identities=11%  Similarity=-0.040  Sum_probs=33.3  Template_Neff=6.000
+
+Q T1120            20 PVSADGLLHAPTAQQQLGLTQ-SWEAALVEHGLPETYRD-----FGAGPE----AAVSVPDFVAL   74 (235)
+Q Consensus        20 ~~~~~~~~~~~dl~~~lg~~~-~w~~~~~~~~~~~~~~~-----~~~g~~----~~~~~~~~l~~   74 (235)
+                      +...|+|+++++|+++.|... .| +.....+++.++..     ..+|+|    .+..++.|+.+
+T Consensus        64 RR~~Dg~INAT~m~kaag~~~~~~-~~~~e~~~i~~l~~~~~~~~~~GTWVppe~A~~LA~~y~i  127 (140)
+T 6A6W_A           64 RMAKDSSISATSMFRSAFPKATQE-EEDLEMRWIRDNLNPIEDKRVAGLWVPPADALALAKDYSM  127 (140)
+T ss_pred             EeCCCCcEEhhHHHHHhCCChhhH-HHHHHHHHHHHHHhccCCcccCceeeCHHHHHHHHHHhCC
+Confidence            456789999999999998765 33 22233334433321     234777    56666666665
+
+
+No 2
+>5YBX_A Bouquet formation protein 4; Telomere bouquet, Nuclear envelope, Chromosome; HET: MSE; 2.501A {Schizosaccharomyces pombe (strain 972 / ATCC 24843)}
+Probab=76.57  E-value=1.7  Score=33.04  Aligned_cols=54  Identities=11%  Similarity=-0.040  Sum_probs=32.9  Template_Neff=6.000
+
+Q T1120            20 PVSADGLLHAPTAQQQLGLTQ-SWEAALVEHGLPETYRD-----FGAGPE----AAVSVPDFVAL   74 (235)
+Q Consensus        20 ~~~~~~~~~~~dl~~~lg~~~-~w~~~~~~~~~~~~~~~-----~~~g~~----~~~~~~~~l~~   74 (235)
+                      +...|+|+++++|++++|... .| +......++..+..     ..+|+|    .+..++.|+.+
+T Consensus        66 RR~~Dg~INAT~m~kaag~~~~~~-~~~~e~~~i~~l~~~~~~~~~~GTWVppe~A~~LA~~y~i  129 (142)
+T 5YBX_A           66 RMAKDSSISATSMFRSAFPKATQE-EEDLEMRWIRDNLNPIEDKRVAGLWVPPADALALAKDYSM  129 (142)
+T ss_pred             EeCCCCcEEhhHHHHHhCCchhHH-HHHHHHHHHHHHHHccCCcccCceeeCHHHHHHHHHHhCC
+Confidence            457889999999999998765 33 22223333333321     234677    56666666654
+
+
+No 3
+>1MB1_A MLU1-BOX BINDING PROTEIN; TRANSCRIPTION REGULATION, CELL-CYCLE, TRANSCRIPTION FACTOR; 2.1A {Saccharomyces cerevisiae} SCOP: d.34.1.1
+Probab=65.86  E-value=4.6  Score=30.24  Aligned_cols=28  Identities=7%  Similarity=0.084  Sum_probs=21.3  Template_Neff=7.100
+
+Q T1120            13 NFGSVR-LPVSADGLLHAPTAQQQLGLTQ   40 (235)
+Q Consensus        13 ~~~~~~-i~~~~~~~~~~~dl~~~lg~~~   40 (235)
+                      .+++.. .+...++|+++++|++++|...
+T Consensus        19 ~~~g~~v~rr~~dg~VNaT~i~ka~g~~~   47 (130)
+T 1MB1_A           19 IHSTGSIMKRKKDDWVNATHILKAANFAK   47 (130)
+T ss_dssp             EETTEEEEEETTTCCEEHHHHHHHTTCCH
+T ss_pred             EECCEEEEEEeCCCCEEhHHHHHHcCCCh
+Confidence            344555 3456788999999999999875
+
+
+No 4
+>1BM8_A TRANSCRIPTION FACTOR MBP1; CELL CYCLE, CYCLINS, DNA SYNTHESIS; 1.71A {Saccharomyces cerevisiae} SCOP: d.34.1.1
+Probab=50.30  E-value=13  Score=26.18  Aligned_cols=28  Identities=7%  Similarity=0.084  Sum_probs=21.0  Template_Neff=8.100
+
+Q T1120            13 NFGSVRL-PVSADGLLHAPTAQQQLGLTQ   40 (235)
+Q Consensus        13 ~~~~~~i-~~~~~~~~~~~dl~~~lg~~~   40 (235)
+                      .+++..+ +...++|++++.+++++|.+.
+T Consensus        16 ~~~g~~i~~r~~d~~VN~T~l~k~~g~~~   44 (99)
+T 1BM8_A           16 IHSTGSIMKRKKDDWVNATHILKAANFAK   44 (99)
+T ss_pred             EECCEEEEEEcCCCeEEHHHHHHHCCCCh
+Confidence            3455444 346778999999999999765
+
+
+No 5
+>1L3G_A TRANSCRIPTION FACTOR Mbp1; cell cycle, Mlu 1 cell; NMR {Saccharomyces cerevisiae} SCOP: d.34.1.1
+Probab=49.19  E-value=14  Score=28.03  Aligned_cols=28  Identities=7%  Similarity=0.084  Sum_probs=18.7  Template_Neff=6.700
+
+Q T1120            13 NFGSVRL-PVSADGLLHAPTAQQQLGLTQ   40 (235)
+Q Consensus        13 ~~~~~~i-~~~~~~~~~~~dl~~~lg~~~   40 (235)
+                      .++|..+ +...++|++++.|++++|...
+T Consensus        18 ~v~g~~V~rR~~d~~VNaT~i~ka~g~~~   46 (136)
+T 1L3G_A           18 IHSTGSIMKRKKDDWVNATHILKAANFAK   46 (136)
+T ss_dssp             -----EECCCTTTCEEEHCCCCCHHHCSS
+T ss_pred             EECCEEEEEEcCCCcEEhHHHHHHcCCCh
+Confidence            3455544 446778999999999999765
+
+
+No 6
+>4UX5_B TRANSCRIPTION FACTOR MBP1; TRANSCRIPTION, VIRULENCE GENE, TRANSCRIPTION FACTOR; 2.4A {MAGNAPORTHE ORYZAE}
+Probab=48.85  E-value=14  Score=27.98  Aligned_cols=22  Identities=14%  Similarity=0.273  Sum_probs=18.4  Template_Neff=6.700
+
+Q T1120            19 LPVSADGLLHAPTAQQQLGLTQ   40 (235)
+Q Consensus        19 i~~~~~~~~~~~dl~~~lg~~~   40 (235)
+                      ++..+|+|++++.+++++|...
+T Consensus        39 ~rR~~d~~VNaT~l~ka~g~~~   60 (136)
+T 4UX5_B           39 MRRRVDDWINATHILKAAGFDK   60 (136)
+T ss_dssp             EEETTTCCEEHHHHHHHTTCCH
+T ss_pred             EEecCCCcEEHHHHHHHCCCCH
+Confidence            3456788999999999999875
+
+
+No 7
+>2JSP_A Transcriptional regulatory protein ros; prokaryotic Cys2His2 zinc finger, GENE; NMR {Agrobacterium tumefaciens}
+Probab=21.62  E-value=80  Score=22.09  Aligned_cols=16  Identities=6%  Similarity=0.125  Sum_probs=14.5  Template_Neff=5.300
+
+Q T1120           161 GKDSASVRQERGVKAT  176 (235)
+Q Consensus       161 g~~a~~~~~~~gl~~~  176 (235)
+                      |+++.+|+..+||+.+
+T Consensus        43 glt~~eYr~k~Glp~~   58 (87)
+T 2JSP_A           43 SMTPEEYREKWDLPVD   58 (87)
+T ss_dssp             CSCHHHHHHHTTCGGG
+T ss_pred             CCCHHHHHHHhCCCCC
+Confidence            8999999999999864
+
+
+No 8
+>2O35_A Hypothetical protein DUF1244; helix bundle, Structural Genomics, PSI-2; HET: MSE; 2.12A {Sinorhizobium meliloti} SCOP: a.293.1.1
+Probab=13.83  E-value=1.6e+02  Score=21.32  Aligned_cols=32  Identities=16%  Similarity=0.097  Sum_probs=12.8  Template_Neff=2.900
+
+Q T1120           154 ISNRTVLGKDSASVRQERGVKATRDGLTSAELLRLAY  190 (235)
+Q Consensus       154 ~~~~~~~g~~a~~~~~~~gl~~~rd~l~~~eL~~~~~  190 (235)
+                      ..-..++||+..+|+..+..+.     |+++++..+.
+T Consensus        67 ~ARE~vYGMpy~eWK~~~Q~~A-----t~eQ~a~f~~   98 (105)
+T 2O35_A           67 ESREIVYGMPYEEWRTQNQGEA-----SPEQKAAFER   98 (105)
+T ss_dssp             HHHHHHHSSCHHHHTC---------------------
+T ss_pred             HHHHHHHCCCHHHHHHHhcCCC-----CHHHHHHHHH
+Confidence            3445688999999999998874     6666665543
+
+
+No 9
+>2O35_B Hypothetical protein DUF1244; helix bundle, Structural Genomics, PSI-2; 2.12A {Sinorhizobium meliloti} SCOP: a.293.1.1
+Probab=13.83  E-value=1.6e+02  Score=21.32  Aligned_cols=32  Identities=16%  Similarity=0.097  Sum_probs=22.5  Template_Neff=2.900
+
+Q T1120           154 ISNRTVLGKDSASVRQERGVKATRDGLTSAELLRLAY  190 (235)
+Q Consensus       154 ~~~~~~~g~~a~~~~~~~gl~~~rd~l~~~eL~~~~~  190 (235)
+                      ..-..++||+..+|+..+..+.     |+++++..+.
+T Consensus        67 ~ARE~vYGMpy~eWK~~~Q~~A-----t~eQ~a~f~~   98 (105)
+T 2O35_B           67 ESREIVYGMPYEEWRTQNQGEA-----SPEQKAAFER   98 (105)
+T ss_dssp             HHHHHHHSSCHHHHHHTC-CCC-----CHHHHHHHSC
+T ss_pred             HHHHHHHCCCHHHHHHHhcCCC-----CHHHHHHHHH
+Confidence            3445688999999999998874     6666665543
+
+
+No 10
+>3FYB_A Protein of unknown function (DUF1244); unknown function, DUF1244, Alcanivorax borkumensis; HET: PEG; 1.8A {Alcanivorax borkumensis SK2}
+Probab=13.08  E-value=1.8e+02  Score=21.12  Aligned_cols=33  Identities=18%  Similarity=0.063  Sum_probs=23.8  Template_Neff=2.900
+
+Q T1120           153 SISNRTVLGKDSASVRQERGVKATRDGLTSAELLRLAY  190 (235)
+Q Consensus       153 ~~~~~~~~g~~a~~~~~~~gl~~~rd~l~~~eL~~~~~  190 (235)
+                      +..-..++||+..+|+..+..+.     |+++++..+.
+T Consensus        65 d~ARE~vYGMpY~eWK~~~Q~~A-----t~eQ~a~f~~   97 (104)
+T 3FYB_A           65 DGAREYVYGMPFAEWKTLYQKPA-----SEAQLAAFEA   97 (104)
+T ss_dssp             HHHHHHHHSSCHHHHHHHHCCCC-----CHHHHHHHHH
+T ss_pred             HHHHHHHHCCCHHHHHHHHCCCC-----CHHHHHHHHH
+Confidence            34455688999999999998874     6666655443
+
+

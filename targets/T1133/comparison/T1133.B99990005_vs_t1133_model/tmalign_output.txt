@@ -1,0 +1,24 @@
+
+ **********************************************************************
+ * TM-align (Version 20240303): protein and RNA structure alignment   *
+ * References: Y Zhang, J Skolnick. Nucl Acids Res 33, 2302-9 (2005)  *
+ *             S Gong, C Zhang, Y Zhang. Bioinformatics, bz282 (2019) *
+ * Please email comments and suggestions to yangzhanglab@umich.edu    *
+ **********************************************************************
+
+Name of Structure_1: /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1133/comparison/T1133.B99990005_vs_t1133_model/tbm.pdb (to be superimposed onto Structure_2)
+Name of Structure_2: /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1133/comparison/T1133.B99990005_vs_t1133_model/af3.pdb
+Length of Structure_1: 414 residues
+Length of Structure_2: 585 residues
+
+Aligned length= 403, RMSD=   1.99, Seq_ID=n_identical/n_aligned= 0.928
+TM-score= 0.91698 (normalized by length of Structure_1: L=414, d0=7.33)
+TM-score= 0.65755 (normalized by length of Structure_2: L=585, d0=8.48)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+---TPLLTVRGS-EGLYMVNGPPHFTESTVFPRESGKNCKVCIFSKDGTLFAWGNGEKVNIISVTNKGLLHSFDLLKAVCLEFSPKNTVLATWQPYTTS----KDGTAGIPNLQLYDVKTGTCLKSFIQKKMQNWCPSWSEDETLCARNVNNEVHFFENNNFNTIANKLHLQKINDFVLSPGP-QPYKVAVYVPGSKGAPSFVRLYQYPNFAGPHAALANKSFFKADKVTMLWNKKATAVLVIASTDVD------KTGASYYGEQTLHYIATNGESAVVQLPKNGPIYDVVWNSSSTEFCAVYGFMPAKATIFNLKCDPVFDFGTGPRNAAYYSPHGHILVLAGFGNLRGQMEVWDVKNYKLISKPVASDSTYFAWCPDGEHILTATCAPRLRVNNGYKIWHYTGSILHKYDVPSNAELWQVSWQPFLD-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   ::::::::: :::::::::.::::::::::....::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::    ::::    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ::::::: :::::.:::::::::::::::.:.:::::::::::::::::::::::::::::::::      :::::::::::      ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..:::::::::::::                                                                                                                                                                       
+MAPSTPLLTVRGSEGLYMVNGPPHFTESTVFPRESGKNCKVCIFSKDGTLFAWGNGEKVNIISVTNKGLLHSFDLLKAVCLEFSPKNTVLATWQPYTTSKDGTAGIP----NLQLYDVKTGTCLKSFIQKKMQNWCPSWSEDETLCARNVNNEVHFFENNNFNTIANKLHLQKINDFVLSPGPQPYKVAVY-VPGSKGAPSFVRLYQYPNFAGPHAALANKSFFKADKVTMLWNKKATAVLVIASTDVDKTGASYYGEQTLHYIAT------NGESAVVQLPKNGPIYDVVWNSSSTEFCAVYGFMPAKATIFNLKCDPVFDFGTGPRNAAYYSPHGHILVLAGFGNLRGQMEVWDVKNYKLISKPVASDSTYFAWCPDGEHILTATCAPRLRVNNGYKIWHYTGSILHKYDVPSNAELWQVSWQPFLDGIFPAKTITYQAVPSEVPNEEPKVATAYRPPALRNKPITNSKLHEEEPPQNMKPQSGNDKPLSKTALKNQRKHEAKKAAKQEARSDKSPDLAPTPAPQSTPRNTVSQSISGDPEIDKKIKNLKKKLKAIEQLKEQAATGKQLEKNQLEKIQKETALLQELEDLELGI
+
+#Total CPU time is  0.39 seconds

@@ -1,0 +1,60 @@
+I1005 14:25:30.493996 139689294828672 xla_bridge.py:895] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+I1005 14:25:30.513921 139689294828672 xla_bridge.py:895] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I1005 14:25:35.626137 139689294828672 pipeline.py:82] Getting protein MSAs for sequence MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:25:35.628892 139682495063616 jackhmmer.py:78] Query sequence: MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:25:35.630460 139682495063616 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpetg2u081/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpetg2u081/query.fasta /cluster/VAST/cietest/alphafold3_database/uniref90_2022_05.fa"
+I1005 14:25:35.637207 139635386345024 jackhmmer.py:78] Query sequence: MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:25:35.637683 139635377952320 jackhmmer.py:78] Query sequence: MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:25:35.638094 139682486670912 jackhmmer.py:78] Query sequence: MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:25:35.638435 139635386345024 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpz21qf0ki/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpz21qf0ki/query.fasta /cluster/VAST/cietest/alphafold3_database/bfd-first_non_consensus_sequences.fasta"
+I1005 14:25:35.638936 139635377952320 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpcvrrppki/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpcvrrppki/query.fasta /cluster/VAST/cietest/alphafold3_database/uniprot_all_2021_04.fa"
+I1005 14:25:35.639332 139682486670912 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpyol7w6wo/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpyol7w6wo/query.fasta /cluster/VAST/cietest/alphafold3_database/mgy_clusters_2022_05.fa"
+I1005 14:26:52.533687 139635386345024 subprocess_utils.py:97] Finished Jackhmmer (bfd-first_non_consensus_sequences.fasta) in 76.895 seconds
+I1005 14:30:46.357073 139682495063616 subprocess_utils.py:97] Finished Jackhmmer (uniref90_2022_05.fa) in 310.726 seconds
+I1005 14:34:13.020847 139635377952320 subprocess_utils.py:97] Finished Jackhmmer (uniprot_all_2021_04.fa) in 517.381 seconds
+I1005 14:37:19.871308 139682486670912 subprocess_utils.py:97] Finished Jackhmmer (mgy_clusters_2022_05.fa) in 704.231 seconds
+I1005 14:37:19.904860 139689294828672 pipeline.py:115] Getting protein MSAs took 704.28 seconds for sequence MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:37:19.904994 139689294828672 pipeline.py:121] Deduplicating MSAs for sequence MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:37:19.916102 139689294828672 pipeline.py:134] Deduplicating MSAs took 0.01 seconds for sequence MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD, found 4615 unpaired sequences, 3178 paired sequences
+I1005 14:37:19.919587 139689294828672 pipeline.py:40] Getting protein templates for sequence MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:37:19.984877 139689294828672 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/hmmbuild --informat stockholm --hand --amino /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmp5gnvkiz0/output.hmm /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmp5gnvkiz0/query.msa"
+I1005 14:37:20.168699 139689294828672 subprocess_utils.py:97] Finished Hmmbuild in 0.184 seconds
+I1005 14:37:20.170993 139689294828672 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/hmmsearch --noali --cpu 8 --F1 0.1 --F2 0.1 --F3 0.1 -E 100 --incE 100 --domE 100 --incdomE 100 -A /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpchcawnc4/output.sto /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/tmp_18319108/tmpchcawnc4/query.hmm /cluster/VAST/cietest/alphafold3_database/pdb_seqres_2022_09_28.fasta"
+I1005 14:37:26.805698 139689294828672 subprocess_utils.py:97] Finished Hmmsearch (pdb_seqres_2022_09_28.fasta) in 6.635 seconds
+I1005 14:37:27.242601 139689294828672 pipeline.py:52] Getting 4 protein templates took 7.32 seconds for sequence MKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPPYHVKD
+I1005 14:37:33.688331 139689294828672 pipeline.py:164] processing T1183, random_seed=1
+I1005 14:37:33.703933 139689294828672 pipeline.py:257] Calculating bucket size for input with 200 tokens.
+I1005 14:37:33.704136 139689294828672 pipeline.py:263] Got bucket size 256 for input with 200 tokens, resulting in 56 padded tokens.
+
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+
+Found local devices: [CudaDevice(id=0)], using device 0: cuda:0
+Building model from scratch...
+Checking that model parameters can be loaded...
+
+Running fold job T1183...
+Output will be written in /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/t1183
+Running data pipeline...
+Running data pipeline for chain A...
+Running data pipeline for chain A took 711.68 seconds
+Writing model input JSON to /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/t1183/t1183_data.json
+Predicting 3D structure for T1183 with 1 seed(s)...
+Featurising data with 1 seed(s)...
+Featurising data with seed 1.
+Featurising data with seed 1 took 2.45 seconds.
+Featurising data with 1 seed(s) took 8.82 seconds.
+Running model inference and extracting output structure samples with 1 seed(s)...
+Running model inference with seed 1...
+Running model inference with seed 1 took 42.77 seconds.
+Extracting output structure samples with seed 1...
+Extracting 5 output structure samples with seed 1 took 0.22 seconds.
+Running model inference and extracting output structures with 1 seed(s) took 42.98 seconds.
+Writing outputs with 1 seed(s)...
+Fold job T1183 done, output written to /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1183/af3_model/t1183
+
+Done running 1 fold jobs.

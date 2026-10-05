@@ -1,0 +1,15 @@
+{
+  "aligned_length": 90,
+  "rmsd": 2.85,
+  "seq_identity_aligned": 0.711,
+  "tm_score_norm_tbm": 0.62892,
+  "tm_score_norm_af3": 0.62892,
+  "length_tbm": 103,
+  "length_af3": 103,
+  "tbm_file": "/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1147/tbm_models/T1147.B99990001.pdb",
+  "af3_file": "/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1147/af3_model/t1147/t1147_model.cif",
+  "rmsd_aligned_pairs_tm_superposition": 2.961,
+  "af3_mean_plddt_all": 91.21,
+  "af3_mean_plddt_aligned": 92.7,
+  "pairs_within_5A": 82
+}

@@ -1,0 +1,15 @@
+{
+  "aligned_length": 307,
+  "rmsd": 4.92,
+  "seq_identity_aligned": 0.495,
+  "tm_score_norm_tbm": 0.64307,
+  "tm_score_norm_af3": 0.51995,
+  "length_tbm": 358,
+  "length_af3": 460,
+  "tbm_file": "/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/models/first_pass/test_target.B99990003.pdb",
+  "af3_file": "/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/af3/output/test_target/test_target_model.cif",
+  "rmsd_aligned_pairs_tm_superposition": 5.021,
+  "af3_mean_plddt_all": 95.62,
+  "af3_mean_plddt_aligned": 95.93,
+  "pairs_within_5A": 221
+}

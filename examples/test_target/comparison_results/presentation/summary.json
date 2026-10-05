@@ -1,0 +1,66 @@
+{
+  "tbm_model": "/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/models/first_pass/test_target.B99990003.pdb",
+  "af3_model": "/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/af3/output/test_target/test_target_model.cif",
+  "tm_score_norm_tbm": 0.64307,
+  "tm_score_norm_af3": 0.51995,
+  "rmsd": 4.92,
+  "aligned_length": 307,
+  "pairs_within_5A": 221,
+  "aligned_pairs_in_register": 137,
+  "tmscore_residue_matched": 0.5541,
+  "rmsd_residue_matched_tmscore": 8.845,
+  "gdt_ts_residue_matched": 0.3247,
+  "residue_matched_rmsd": 9.2,
+  "length_tbm": 358,
+  "length_af3": 460,
+  "af3_ptm": 0.93,
+  "af3_ranking_score": 0.93,
+  "af3_fraction_disordered": 0.0,
+  "af3_has_clash": 0.0,
+  "af3_mean_plddt_all": 95.62,
+  "af3_mean_plddt_aligned": 95.93,
+  "dope_tbm": -29215.4,
+  "dope_af3_trimmed": -44235.6,
+  "zdope_tbm": 1.16,
+  "zdope_af3_trimmed": -1.811,
+  "tm_tbm_vs_template": 0.74179,
+  "tm_af3_vs_template": 0.6288,
+  "regions": [
+    {
+      "region": "1-102",
+      "af3_plddt": 95.1,
+      "tbm_dope": 0.0,
+      "af3_dope": 0.0,
+      "ca_deviation": 0.0,
+      "resolved_pairs": 0,
+      "length": 102
+    },
+    {
+      "region": "182-215",
+      "af3_plddt": 90.1,
+      "tbm_dope": -0.023,
+      "af3_dope": -0.0396,
+      "ca_deviation": 9.18,
+      "resolved_pairs": 34,
+      "length": 34
+    },
+    {
+      "region": "224-230",
+      "af3_plddt": 96.2,
+      "tbm_dope": -0.0117,
+      "af3_dope": -0.0239,
+      "ca_deviation": 7.98,
+      "resolved_pairs": 7,
+      "length": 7
+    },
+    {
+      "region": "331-345",
+      "af3_plddt": 96.8,
+      "tbm_dope": -0.03,
+      "af3_dope": -0.0384,
+      "ca_deviation": 10.61,
+      "resolved_pairs": 15,
+      "length": 15
+    }
+  ]
+}

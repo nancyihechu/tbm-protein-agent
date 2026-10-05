@@ -1,0 +1,7 @@
+target,length,top_hit_pdb,best_template,probability,evalue,identity,coverage,combined_coverage,status
+T1194,168,1V7N_X,,16.14,130.0,7,17.3,,FAIL
+T1183,200,6N9A_B,,100.0,8.2e-35,24,99.5,99.5,FAIL
+T1159,160,5HB6_B,,45.58,17.0,18,28.1,,FAIL
+T1147,103,2LW3_A,2LW3_A,99.63,9.3e-20,55,86.4,86.4,PASS
+T1120,235,6A6W_A,,77.85,1.5,11,23.4,,FAIL
+T1133,585,6GSN_p,3WJ9_B,99.93,1.1e-30,37,70.8,72.3,PASS

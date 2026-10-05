@@ -1,0 +1,15 @@
+T1133: T1133 Q9BY44, homo sapiens, 585 residues
+Length 585; modeled residues 5-418
+
+Templates:
+  3WJ9_B (hhsearch hit 3): prob 99.9, E 1.1e-30, identity 37%, query 5-418; Eukaryotic translation initiation factor 2A, 2.506 A
+  Choice: 3WJ9_B only (hit 3; S. pombe eIF2A, 37% identity); 6GSN_p and 6GSM_p excluded as instructed.
+
+Best TBM model: tbm_models/T1133.B99990005.pdb (DOPE -42136.5, GA341 1.000)
+AF3 top model: af3_model/t1133/t1133_model.cif (mean pLDDT 88.5, pTM 0.78)
+TBM vs AF3: TM-score 0.893 residue-matched, 0.917 TM-align; RMSD 4.27 A residue-matched, 1.99 A TM-align over 403 residues
+
+Problems:
+  - Modeled only the template-covered range 5-418; residues 1-4 and 419-585 are not in the TBM model.
+  - 3WJ9_B has 10 unresolved residues; they appear as gaps in the template row of the alignment.
+  - AF3 ran on the first attempt; the unified-memory retry was not needed.

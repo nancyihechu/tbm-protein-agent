@@ -1,0 +1,143 @@
+{
+  "target": "T1183",
+  "description": "T1183 TsaB, 200 residues",
+  "length": 200,
+  "fasta": "T1183.fasta",
+  "created": "2026-10-05",
+  "template_search": {
+    "hhblits_db": "UniRef30_2020_06",
+    "hhsearch_db": "pdb70 (2020-04)",
+    "hhr": "hhsearch_output/T1183.hhr",
+    "choice": "Full-length hits >= 95% prob with the highest identity: 6N9A_B, 6S84_C, 2A6A_A (24-25%). 6N9A_D (26%) left out: covers only 1-114 and is a different protein (TsaD)."
+  },
+  "templates": [
+    {
+      "pdb_chain": "6N9A_B",
+      "hhsearch_rank": 1,
+      "probability": 100.0,
+      "evalue": 8.2e-35,
+      "identity_pct": 24,
+      "query_range": [
+        1,
+        199
+      ],
+      "template_seqres_range": [
+        6,
+        203
+      ],
+      "resolution_A": 2.5,
+      "protein": "tRNA threonylcarbamoyladenosine biosynthesis protein TsaB",
+      "file": "templates/6n9a_B.pdb"
+    },
+    {
+      "pdb_chain": "6S84_C",
+      "hhsearch_rank": 3,
+      "probability": 100.0,
+      "evalue": 2.4e-34,
+      "identity_pct": 25,
+      "query_range": [
+        1,
+        199
+      ],
+      "template_seqres_range": [
+        1,
+        198
+      ],
+      "resolution_A": 2.89,
+      "protein": "tRNA N6-adenosine threonylcarbamoyltransferase (E.C.2.3.1.234), ATPase",
+      "file": "templates/6s84_C.pdb"
+    },
+    {
+      "pdb_chain": "2A6A_A",
+      "hhsearch_rank": 5,
+      "probability": 99.94,
+      "evalue": 2.4e-32,
+      "identity_pct": 25,
+      "query_range": [
+        1,
+        199
+      ],
+      "template_seqres_range": [
+        13,
+        210
+      ],
+      "resolution_A": 2.5,
+      "protein": "hypothetical protein TM0874",
+      "file": "templates/2a6a_A.pdb"
+    }
+  ],
+  "modeled_range": [
+    1,
+    200
+  ],
+  "alignment": "alignment/T1183.pir",
+  "modeller": {
+    "version": "10.8",
+    "n_models": 5,
+    "slurm_job": "18319200",
+    "models": [
+      {
+        "file": "tbm_models/T1183.B99990001.pdb",
+        "dope": -20419.955,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1183.B99990002.pdb",
+        "dope": -20855.189,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1183.B99990003.pdb",
+        "dope": -20993.033,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1183.B99990004.pdb",
+        "dope": -21006.627,
+        "ga341": 1.0
+      },
+      {
+        "file": "tbm_models/T1183.B99990005.pdb",
+        "dope": -21673.113,
+        "ga341": 1.0
+      }
+    ],
+    "best_model": "tbm_models/T1183.B99990005.pdb",
+    "best_dope": -21673.113,
+    "best_ga341": 1.0
+  },
+  "alphafold3": {
+    "module": "alphafold3/alphafold3_v301_deepmind",
+    "slurm_job": "18319108",
+    "model": "af3_model/t1183/t1183_model.cif",
+    "seeds": 1,
+    "samples": 5,
+    "ptm": 0.9,
+    "ranking_score": 0.93,
+    "fraction_disordered": 0.06,
+    "mean_plddt": 93.18,
+    "mean_plddt_modeled_range": 93.18
+  },
+  "comparison": {
+    "dir": "comparison/T1183.B99990005_vs_t1183_model",
+    "tm_align": {
+      "tm_score_norm_tbm": 0.75141,
+      "tm_score_norm_af3": 0.75141,
+      "rmsd": 3.31,
+      "aligned_length": 188,
+      "pairs_within_5A": 157
+    },
+    "residue_matched": {
+      "tm_score": 0.7437,
+      "rmsd": 5.954,
+      "gdt_ts": 0.6038,
+      "residues_in_common": 200
+    }
+  },
+  "problems": [
+    "All three templates are the same protein (T. maritima TsaB), so they add little structural diversity.",
+    "HHsearch placed one or two gaps differently for 2A6A_A (near residues 10-12 and 23); 2A6A_A has 25 unresolved residues including its C-terminal tail.",
+    "Identity to every template is 24-25%, below the 30% screening cutoff (screen FAIL); expect register errors.",
+    "Residue 200 has no template; MODELLER built it without template restraints."
+  ]
+}

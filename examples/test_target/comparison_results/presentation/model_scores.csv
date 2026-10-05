@@ -1,0 +1,11 @@
+model,method,residues,dope,zdope,tmscore_seq_vs_af3_top,rmsd_seq_vs_af3_top,gdt_ts_vs_af3_top,tm_vs_af3_top,rmsd_vs_af3_top,tm_best_tbm_vs_this,tm_vs_template,mean_plddt,ptm,ranking_score,file
+TBM 1,TBM (MODELLER),103-460,-29061.7,1.19,0.5422,8.761,0.3087,0.64767,4.86,,0.76308,,,,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/models/first_pass/test_target.B99990001.pdb
+TBM 2,TBM (MODELLER),103-460,-28836.7,1.235,0.5515,8.713,0.3128,0.64809,4.75,,0.7767,,,,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/models/first_pass/test_target.B99990002.pdb
+TBM 3,TBM (MODELLER),103-460,-29215.4,1.16,0.5541,8.845,0.3247,0.64307,4.92,,0.74179,,,,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/models/first_pass/test_target.B99990003.pdb
+TBM 4,TBM (MODELLER),103-460,-28197.3,1.361,0.5425,8.867,0.3073,0.63906,4.91,,0.77198,,,,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/models/first_pass/test_target.B99990004.pdb
+TBM 5,TBM (MODELLER),103-460,-28747.4,1.253,0.5437,9.188,0.3101,0.6442,4.87,,0.76752,,,,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/models/first_pass/test_target.B99990005.pdb
+AF3 seed-1_sample-0,AlphaFold3,103-460 (trimmed),-44235.6,-1.811,,,,,,0.64307,0.6288,95.62,0.93,0.9284,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/af3/output/test_target/seed-1_sample-0/model.cif
+AF3 seed-1_sample-1,AlphaFold3,103-460 (trimmed),-44219.3,-1.808,,,,,,0.64118,0.62963,95.64,0.93,0.928,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/af3/output/test_target/seed-1_sample-1/model.cif
+AF3 seed-1_sample-2,AlphaFold3,103-460 (trimmed),-44269.3,-1.818,,,,,,0.64031,0.628,95.62,0.93,0.9281,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/af3/output/test_target/seed-1_sample-2/model.cif
+AF3 seed-1_sample-3,AlphaFold3,103-460 (trimmed),-44150.3,-1.795,,,,,,0.64136,0.62759,95.56,0.92,0.9236,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/af3/output/test_target/seed-1_sample-3/model.cif
+AF3 seed-1_sample-4,AlphaFold3,103-460 (trimmed),-44207.0,-1.806,,,,,,0.64162,0.62803,95.4,0.93,0.9261,/cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/af3/output/test_target/seed-1_sample-4/model.cif

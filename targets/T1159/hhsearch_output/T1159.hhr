@@ -1,0 +1,280 @@
+Query         T1159 TecA tgat, A. faecalis, 160 residues
+Match_columns 160
+No_of_seqs    57 out of 57
+Neff          4.21053
+Searched_HMMs 80799
+Date          Mon Oct  5 13:04:27 2026
+Command       hhsearch -i /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1159/hhsearch_output/T1159.a3m -d /cluster/VAST/cietest/alphafold_database/pdb70/pdb70 -o /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/targets/T1159/hhsearch_output/T1159.hhr -cpu 8 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 5HB6_B Nucleoporin NUP145 (E.C  45.6      17 0.00021   29.6   0.0   45  113-157    19-69  (144)
+  2 3NF5_A Crystal structure of th  39.8      24  0.0003   29.6   0.0   45  113-157    31-81  (164)
+  3 5E0Q_B Anti-Nup98 Nanobody TP3  37.3      28 0.00035   28.7   0.0   41  113-157    30-76  (153)
+  4 2Q5Y_A Nuclear pore complex pr  36.2      30 0.00037   28.5   0.0   40  114-157    30-75  (152)
+  5 3KEP_B Nucleoporin NUP145 (E.C  33.6      36 0.00044   28.9   0.0   44  113-156    37-90  (174)
+  6 3KES_A Nucleoporin NUP145 (E.C  33.6      36 0.00044   28.9   0.0   44  113-156    37-90  (174)
+  7 3KES_B Nucleoporin NUP145 (E.C  33.6      36 0.00044   28.9   0.0   44  113-156    37-90  (174)
+  8 1KO6_A Nuclear Pore Complex Pr  33.4      36 0.00044   29.3   0.0   40  114-157    65-110 (187)
+  9 5CWW_A Nucleoporin NUP145N (E.  32.1      39 0.00048   27.6   0.0   44  113-156    22-71  (140)
+ 10 3PBP_K Nucleoporin NUP82/Nucle  27.4      53 0.00066   27.0   0.0   44  113-156    20-69  (148)
+ 11 1EJW_B CRYSTAL STRUCTURE OF WI  27.4      53 0.00066   26.3   0.0   49   74-124    50-99  (101)
+ 12 4EP8_B Urease subunit alpha (E  27.4      53 0.00066   26.3   0.0   49   74-124    50-99  (101)
+ 13 4EPD_B Urease subunit alpha (E  27.4      53 0.00066   26.3   0.0   49   74-124    50-99  (101)
+ 14 5OL4_B Urease subunit gamma (E  23.4      71 0.00087   26.5   0.0   49   74-124    52-101 (122)
+ 15 6QDY_B Urease subunit gamma (E  23.4      71 0.00087   26.5   0.0   49   74-124    52-101 (122)
+ 16 1E9Y_A UREASE SUBUNIT ALPHA (E  22.7      74 0.00092   29.1   0.0   67   74-144   155-222 (238)
+ 17 2AIV_A fragment of Nucleoporin  21.2      83   0.001   26.0   0.0   42  113-156    21-70  (149)
+ 18 4Z42_K UREASE SUBUNIT ALPHA, U  21.1      84   0.001   27.4   0.0   49   74-124    84-133 (164)
+
+No 1
+>5HB6_B Nucleoporin NUP145 (E.C.3.4.21.-); Nucleocytoplasmic transport, Protein transport, TRANSPORT; HET: SO4; 1.3A {Chaetomium thermophilum (strain DSM 1495 / CBS 144.50 / IMI 039719)}
+Probab=45.58  E-value=17  Score=29.64  Aligned_cols=45  Identities=18%  Similarity=0.172  Sum_probs=31.5  Template_Neff=6.600
+
+Q T1159           113 TEIRAINGGLLGAG------WLHPVDLRKVLTQKNPDGSFKYDGTDIFVYI  157 (160)
+Q Consensus       113 t~IRsVNG~~LG~~------W~~~vdL~~vL~~~n~dG~f~yd~t~I~VyI  157 (160)
+                      .+.+.|+++.+|..      |..||||+.+=-..-.|....++...|+||=
+T Consensus        19 ~eL~~V~~F~Vgr~g~G~I~f~~pvDl~~~~ld~l~~~iV~~~~~~v~vYp   69 (144)
+T 5HB6_B           19 MQRQRVVGFTVGRENVGSVQFKVPVDLSNINLDDLFGTIVILEPRSATVYP   69 (144)
+T ss_dssp             HHHTSBTTCEEEETTTEEEEESSCBCCTTSCTTSCBTTTEEEETTEEEESS
+T ss_pred             HHhccccCCEEeeCCcEEEEecCceeCccCCHhHcCCceEEEcCCEEEEcC
+Confidence            57888998888853      8999999887201111345677788888873
+
+
+No 2
+>3NF5_A Crystal structure of the C-terminal; Nuclear pore complex, NUP116, GLEBS; HET: GOL; 1.94A {Candida glabrata}
+Probab=39.76  E-value=24  Score=29.55  Aligned_cols=45  Identities=22%  Similarity=0.400  Sum_probs=32.7  Template_Neff=6.300
+
+Q T1159           113 TEIRAINGGLLGA------GWLHPVDLRKVLTQKNPDGSFKYDGTDIFVYI  157 (160)
+Q Consensus       113 t~IRsVNG~~LG~------~W~~~vdL~~vL~~~n~dG~f~yd~t~I~VyI  157 (160)
+                      .+.+.|+++.+|.      -|..||||+.+==..-.|....++...|+||=
+T Consensus        31 ~eL~~V~~F~Igr~g~G~I~f~~pvDl~~ldl~~i~d~iV~i~~~~v~VYp   81 (164)
+T 3NF5_A           31 YEIQKVENLVVGNKQYGKIEFLDPVDLSDIPLGSICDDLVVFQPMSVLLYN   81 (164)
+T ss_dssp             HHHTSBCSCEEEETTTEEEEESSCBCCTTCCGGGTBTTTEEEETTEEEEST
+T ss_pred             HHhcccCCcEEEeCCcEEEEeCCCeeCccCCccccCCceEEECCCEEEEeC
+Confidence            5788999999885      48999999887101112677778888888883
+
+
+No 3
+>5E0Q_B Anti-Nup98 Nanobody TP377, Nuclear pore; nuclear pore complex, nuclear transport; 1.9A {Vicugna pacos}
+Probab=37.34  E-value=28  Score=28.66  Aligned_cols=41  Identities=20%  Similarity=0.334  Sum_probs=29.9  Template_Neff=6.700
+
+Q T1159           113 TEIRAINGGLLGAG------WLHPVDLRKVLTQKNPDGSFKYDGTDIFVYI  157 (160)
+Q Consensus       113 t~IRsVNG~~LG~~------W~~~vdL~~vL~~~n~dG~f~yd~t~I~VyI  157 (160)
+                      .+.+.|+++.+|..      |..||||+.+    +=|....++...|.||-
+T Consensus        30 ~~L~~V~~f~Vgr~g~G~I~f~~pvDl~~~----dld~iV~i~~~~v~vY~   76 (153)
+T 5E0Q_B           30 NGECIVNGFTIGREGFGSIYFEGIVNLTNL----DLDSIVHIRRKEVIVYV   76 (153)
+T ss_dssp             TSCCEEEEEEEEETTTEEEEEEEEEECTTC----CHHHHEEEETTEEEESS
+T ss_pred             hhcccccCcEEEeCCeEEEEeCCcEeCCCC----CccccEEEcCCEEEEcC
+Confidence            45788888888854      9999999876    23555666777777773
+
+
+No 4
+>2Q5Y_A Nuclear pore complex protein Nup98; Nup98, nucleoporin, autoproteolysis, Protein transport; 2.3A {Homo sapiens}
+Probab=36.24  E-value=30  Score=28.47  Aligned_cols=40  Identities=18%  Similarity=0.250  Sum_probs=30.0  Template_Neff=6.700
+
+Q T1159           114 EIRAINGGLLGA------GWLHPVDLRKVLTQKNPDGSFKYDGTDIFVYI  157 (160)
+Q Consensus       114 ~IRsVNG~~LG~------~W~~~vdL~~vL~~~n~dG~f~yd~t~I~VyI  157 (160)
+                      +.+.|+++.+|.      .|..||||+.+    +=|....++...|.||=
+T Consensus        30 ~l~~V~~F~Vgr~g~G~I~f~~pvDl~~l----dLd~iV~i~~~~v~VYp   75 (152)
+T 2Q5Y_A           30 GECIVSDFTIGRKGYGSIYFEGDVNLTNL----NLDDIVHIRRKEVVVYL   75 (152)
+T ss_dssp             SCCEEEEEEEEETTTEEEEEEEEEECTTC----BHHHHEEEETTEEEECS
+T ss_pred             CcceecCcEEEeCCeEEEEecCceeCCCC----CccccEEEeCCEEEEeC
+Confidence            468888888885      48899999877    23566777777777773
+
+
+No 5
+>3KEP_B Nucleoporin NUP145 (E.C.3.4.21.-); Nuclear pore complex, NUP145, NUP145-N; HET: MSE, EDO; 1.82A {Saccharomyces cerevisiae}
+Probab=33.57  E-value=36  Score=28.93  Aligned_cols=44  Identities=18%  Similarity=0.303  Sum_probs=30.9  Template_Neff=6.200
+
+Q T1159           113 TEIRAINGGLLGA------GWLHPVDLRKVLT---QKNPDGSFKYD-GTDIFVY  156 (160)
+Q Consensus       113 t~IRsVNG~~LG~------~W~~~vdL~~vL~---~~n~dG~f~yd-~t~I~Vy  156 (160)
+                      .+.+.|+++.+|.      -|..||||+.+-.   ...-|....++ ...|+||
+T Consensus        37 ~eL~~V~~FtVgr~g~G~I~f~~pVDl~~l~~~~~~~~ld~iV~~~~~~~v~VY   90 (174)
+T 3KEP_B           37 KQLAAVSNFVIGRRGYGCITFQHDVDLTAFTKSFREELFGKIVIFRSSKTVEVY   90 (174)
+T ss_dssp             HHHTSBTTCEEEETTTEEEEESSCBCCGGGTTCHHHHHBTTTEEEETTTEEEEC
+T ss_pred             HHhcccCCcEEEeCCeEEEEeCCCeeccccCHHHHHHHcCCEEEEcCCCEEEEc
+Confidence            5678899888885      6999999988720   11125666676 3777777
+
+
+No 6
+>3KES_A Nucleoporin NUP145 (E.C.3.4.21.-); Nuclear pore complex, NUP145, NUP145-N; HET: EDO, MSE; 2.1A {Saccharomyces cerevisiae}
+Probab=33.57  E-value=36  Score=28.93  Aligned_cols=44  Identities=18%  Similarity=0.303  Sum_probs=30.9  Template_Neff=6.200
+
+Q T1159           113 TEIRAINGGLLGA------GWLHPVDLRKVLT---QKNPDGSFKYD-GTDIFVY  156 (160)
+Q Consensus       113 t~IRsVNG~~LG~------~W~~~vdL~~vL~---~~n~dG~f~yd-~t~I~Vy  156 (160)
+                      .+.+.|+++.+|.      -|..||||+.+-.   ...-|....++ ...|+||
+T Consensus        37 ~eL~~V~~FtVgr~g~G~I~f~~pVDl~~l~~~~~~~~ld~iV~~~~~~~v~VY   90 (174)
+T 3KES_A           37 KQLAAVSNFVIGRRGYGCITFQHDVDLTAFTKSFREELFGKIVIFRSSKTVEVY   90 (174)
+T ss_dssp             HHHTSBSSCEEEETTTEEEEESSCBCCGGGTTCHHHHHBTTTEEEETTTEEEEC
+T ss_pred             HHhcccCCcEEEeCCeEEEEeCCCeeccccCHHHHHHHcCCEEEEcCCCEEEEc
+Confidence            5678899888885      6999999988720   11125666676 3777777
+
+
+No 7
+>3KES_B Nucleoporin NUP145 (E.C.3.4.21.-); Nuclear pore complex, NUP145, NUP145-N,yeast; HET: EDO; 2.1A {Saccharomyces cerevisiae}
+Probab=33.57  E-value=36  Score=28.93  Aligned_cols=44  Identities=18%  Similarity=0.303  Sum_probs=30.9  Template_Neff=6.200
+
+Q T1159           113 TEIRAINGGLLGA------GWLHPVDLRKVLT---QKNPDGSFKYD-GTDIFVY  156 (160)
+Q Consensus       113 t~IRsVNG~~LG~------~W~~~vdL~~vL~---~~n~dG~f~yd-~t~I~Vy  156 (160)
+                      .+.+.|+++.+|.      -|..||||+.+-.   ...-|....++ ...|+||
+T Consensus        37 ~eL~~V~~FtVgr~g~G~I~f~~pVDl~~l~~~~~~~~ld~iV~~~~~~~v~VY   90 (174)
+T 3KES_B           37 KQLAAVSNFVIGRRGYGCITFQHDVDLTAFTKSFREELFGKIVIFRSSKTVEVY   90 (174)
+T ss_dssp             HHHTTBSSCEEEETTTEEEEESSCBCCGGGTTCHHHHHBTTTEEEETTTEEEES
+T ss_pred             HHhcccCCcEEEeCCeEEEEeCCCeeccccCHHHHHHHcCCEEEEcCCCEEEEc
+Confidence            5678899888885      6999999988720   11125666676 3777777
+
+
+No 8
+>1KO6_A Nuclear Pore Complex Protein Nup98/Nuclear; nucleoporin, autoproteolysis, nuclear pore, TRANSFERASE; 3.0A {Homo sapiens} SCOP: b.119.1.1
+Probab=33.41  E-value=36  Score=29.32  Aligned_cols=40  Identities=18%  Similarity=0.250  Sum_probs=30.7  Template_Neff=6.000
+
+Q T1159           114 EIRAINGGLLGA------GWLHPVDLRKVLTQKNPDGSFKYDGTDIFVYI  157 (160)
+Q Consensus       114 ~IRsVNG~~LG~------~W~~~vdL~~vL~~~n~dG~f~yd~t~I~VyI  157 (160)
+                      +.++|+++.+|.      .|..||||+.+    +=|....++...|.||=
+T Consensus        65 ~L~~V~~FtVgr~g~G~I~f~~pVDl~~l----dLd~iV~i~~~~v~VYp  110 (187)
+T 1KO6_A           65 GECIVSDFTIGRKGYGSIYFEGDVNLTNL----NLDDIVHIRRKEVVVYL  110 (187)
+T ss_dssp             SCCEESSEEEEETTTEEEEECSCEECTTC----BHHHHEEEETTEEEESS
+T ss_pred             hcccccCcEEEeCCeEEEEeCCCeeCCCC----CccccEEEeCCEEEEcC
+Confidence            588999988886      38999999877    23566777777788873
+
+
+No 9
+>5CWW_A Nucleoporin NUP145N (E.C.3.4.21.-), Nucleoporin NUP82; nucleocytoplasmic transport, TRANSPORT PROTEIN; 2.2A {Chaetomium thermophilum (strain DSM 1495 / CBS 144.50 / IMI 039719)}
+Probab=32.14  E-value=39  Score=27.58  Aligned_cols=44  Identities=18%  Similarity=0.194  Sum_probs=30.3  Template_Neff=6.500
+
+Q T1159           113 TEIRAINGGLLGA------GWLHPVDLRKVLTQKNPDGSFKYDGTDIFVY  156 (160)
+Q Consensus       113 t~IRsVNG~~LG~------~W~~~vdL~~vL~~~n~dG~f~yd~t~I~Vy  156 (160)
+                      .+.+.|+++.+|.      -|..||||+.+==..-.|....++...|+||
+T Consensus        22 ~eL~~V~~F~Vgr~g~G~I~f~~pvDl~~l~ld~~~~~iV~i~~~~v~vY   71 (140)
+T 5CWW_A           22 MQRQRVVGFTVGRENVGSVQFKVPVDLSNINLDDLFGTIVILEPRSATVY   71 (140)
+T ss_dssp             TGGGSBTTCEEEETTTEEEEESSCBCCTTSCGGGCBTTTEEEETTEEEES
+T ss_pred             HHhccccCCEEeeCCcEEEEecCceeCccCCHHHcCCceEEEcCCEEEEc
+Confidence            5688888888885      3899999988710101133567778888887
+
+
+No 10
+>3PBP_K Nucleoporin NUP82/Nucleoporin NUP116/NSP116/Nucleoporin NUP159 complex; beta-propeller, nucleoporin, mRNA export, mRNP; HET: PGE, MSE; 2.6A {Saccharomyces cerevisiae}
+Probab=27.39  E-value=53  Score=27.02  Aligned_cols=44  Identities=18%  Similarity=0.355  Sum_probs=30.1  Template_Neff=6.600
+
+Q T1159           113 TEIRAINGGLLGA------GWLHPVDLRKVLTQKNPDGSFKYDGTDIFVY  156 (160)
+Q Consensus       113 t~IRsVNG~~LG~------~W~~~vdL~~vL~~~n~dG~f~yd~t~I~Vy  156 (160)
+                      .+.+.|+++.+|.      -|..||||+.+==..-.|....++...|.||
+T Consensus        20 ~~L~~V~~F~Vgr~g~G~I~f~~~vDl~~ldld~i~~~iV~i~~~~v~vY   69 (148)
+T 3PBP_K           20 LQLRKVPHLVVGHKSYGKIEFLEPVDLAGIPLTSLGGVIITFEPKTCIIY   69 (148)
+T ss_dssp             STTSSBCSCEEEETTTEEEEESSCBCCTTSCTTHHHHTSEEEETTEEEES
+T ss_pred             HHhccCCCcEEEeCCeEEEEeCCceeCCCCCHHHcCCeEEEECCCEEEEe
+Confidence            5678888888885      5889999987610000134567778888887
+
+
+No 11
+>1EJW_B CRYSTAL STRUCTURE OF WILD-TYPE KLEBSIELLA; alpha-beta barrel, nickel metalloenzyme, HYDROLASE; HET: KCX; 1.9A {Klebsiella aerogenes} SCOP: b.85.3.1
+Probab=27.38  E-value=53  Score=26.34  Aligned_cols=49  Identities=27%  Similarity=0.408  Sum_probs=32.9  Template_Neff=3.900
+
+Q T1159            74 KFAEGRMWDGRNSLPGGKAIGFCRVKGMEFFHAAVAVGG-TEIRAINGGLLG  124 (160)
+Q Consensus        74 n~~~g~~WdG~s~ip~G~aIgF~r~~~~~~FHsAIavG~-t~IRsVNG~~LG  124 (160)
+                      .|.....|--+-+||+|++|-|..-..+.+  .=+.+|| ..|.+.||..-|
+T Consensus        50 ~FdR~~A~G~RLdIpaGTavRFEPG~~~~V--~LV~~gG~r~v~G~~g~~~g   99 (101)
+T 1EJW_B           50 KFDRQQAAGYRLNIPAGTAVRFEPGQKREV--ELVAFAGHRAVFGFRGEVMG   99 (101)
+T ss_dssp             ESCTTTTTTEEECSSTTCEEEECTTCEEEE--EEEECCTTCEECSTTSSCCE
+T ss_pred             CcchhHccceecCCCCcceeccCCCCcEEE--EEEEccCCcEEeCCCcccCC
+Confidence            344455666777899999999988544433  2244566 778888876544
+
+
+No 12
+>4EP8_B Urease subunit alpha (E.C.3.5.1.5), Urease; alpha-beta barrel, nickel metalloenzyme, hydrolase; 1.55A {Enterobacter aerogenes}
+Probab=27.38  E-value=53  Score=26.34  Aligned_cols=49  Identities=27%  Similarity=0.408  Sum_probs=32.9  Template_Neff=3.900
+
+Q T1159            74 KFAEGRMWDGRNSLPGGKAIGFCRVKGMEFFHAAVAVGG-TEIRAINGGLLG  124 (160)
+Q Consensus        74 n~~~g~~WdG~s~ip~G~aIgF~r~~~~~~FHsAIavG~-t~IRsVNG~~LG  124 (160)
+                      .|.....|--+-+||+|++|-|..-..+.+  .=+.+|| ..|.+.||..-|
+T Consensus        50 ~FdR~~A~G~RLdIpaGTavRFEPG~~~~V--~LV~~gG~r~v~G~~g~~~g   99 (101)
+T 4EP8_B           50 KFDRQQAAGYRLNIPAGTAVRFEPGQKREV--ELVAFAGHRAVFGFRGEVMG   99 (101)
+T ss_dssp             ESCTTTTTTEEECSSTTCEEEECTTCEEEE--EEEECCTTCEECSTTSSCCE
+T ss_pred             CcchhHccceecCCCCcceeccCCCCcEEE--EEEEccCCcEEeCCCcccCC
+Confidence            344455666777899999999988544433  2244566 778888876544
+
+
+No 13
+>4EPD_B Urease subunit alpha (E.C.3.5.1.5), Urease; alpha-beta barrel, nickel metalloenzyme, hydrolase; 1.7A {Enterobacter aerogenes}
+Probab=27.38  E-value=53  Score=26.34  Aligned_cols=49  Identities=27%  Similarity=0.408  Sum_probs=32.9  Template_Neff=3.900
+
+Q T1159            74 KFAEGRMWDGRNSLPGGKAIGFCRVKGMEFFHAAVAVGG-TEIRAINGGLLG  124 (160)
+Q Consensus        74 n~~~g~~WdG~s~ip~G~aIgF~r~~~~~~FHsAIavG~-t~IRsVNG~~LG  124 (160)
+                      .|.....|--+-+||+|++|-|..-..+.+  .=+.+|| ..|.+.||..-|
+T Consensus        50 ~FdR~~A~G~RLdIpaGTavRFEPG~~~~V--~LV~~gG~r~v~G~~g~~~g   99 (101)
+T 4EPD_B           50 KFDRQQAAGYRLNIPAGTAVRFEPGQKREV--ELVAFAGHRAVFGFRGEVMG   99 (101)
+T ss_dssp             ESCHHHHTTEEECSCTTCEEEECTTCEEEE--EEEECCTTCEECSTTSSCCE
+T ss_pred             CcchhHccceecCCCCcceeccCCCCcEEE--EEEEccCCcEEeCCCcccCC
+Confidence            344455666777899999999988544433  2244566 778888876544
+
+
+No 14
+>5OL4_B Urease subunit gamma (E.C.3.5.1.5), Urease; Urease Nickel NBPT enzyme, HYDROLASE; HET: EDO, KCX, CXM, SO4; 1.28A {Sporosarcina pasteurii}
+Probab=23.35  E-value=71  Score=26.48  Aligned_cols=49  Identities=27%  Similarity=0.309  Sum_probs=34.7  Template_Neff=3.900
+
+Q T1159            74 KFAEGRMWDGRNSLPGGKAIGFCRVKGMEFFHAAVAVGG-TEIRAINGGLLG  124 (160)
+Q Consensus        74 n~~~g~~WdG~s~ip~G~aIgF~r~~~~~~FHsAIavG~-t~IRsVNG~~LG  124 (160)
+                      .|.....|--+-+||+|++|-|..-..+.+-  =+.+|| ..|.+.||..-|
+T Consensus        52 ~FdR~~A~G~RLdIpaGTavRFEPG~~k~V~--LV~~gG~r~v~G~~gl~~G  101 (122)
+T 5OL4_B           52 LFDRAEGIGRRLNIPSGTAARFEPGEEMEVE--LTELGGNREVFGISDLTNG  101 (122)
+T ss_dssp             ESCGGGGTTEEECSCTTCEEEECTTCEEEEE--EEECCTTCEECSTTSSCSE
+T ss_pred             CeehhhccceECCCCCCcccccCCCCcEEEE--EEeccCceEEeCCccccCC
+Confidence            4555566777788999999999885544332  245666 788898887665
+
+
+No 15
+>6QDY_B Urease subunit gamma (E.C.3.5.1.5), Urease; urease, Sporosarcina pasteurii, nickel, urea; HET: SO4, CXM, KCX, EDO; 1.416A {Sporosarcina pasteurii}
+Probab=23.35  E-value=71  Score=26.48  Aligned_cols=49  Identities=27%  Similarity=0.309  Sum_probs=34.7  Template_Neff=3.900
+
+Q T1159            74 KFAEGRMWDGRNSLPGGKAIGFCRVKGMEFFHAAVAVGG-TEIRAINGGLLG  124 (160)
+Q Consensus        74 n~~~g~~WdG~s~ip~G~aIgF~r~~~~~~FHsAIavG~-t~IRsVNG~~LG  124 (160)
+                      .|.....|--+-+||+|++|-|..-..+.+-  =+.+|| ..|.+.||..-|
+T Consensus        52 ~FdR~~A~G~RLdIpaGTavRFEPG~~k~V~--LV~~gG~r~v~G~~gl~~G  101 (122)
+T 6QDY_B           52 LFDRAEGIGRRLNIPSGTAARFEPGEEMEVE--LTELGGNREVFGISDLTNG  101 (122)
+T ss_dssp             ESCGGGGTTEEECSCTTCEEEECTTCEEEEE--EEECCTTCEECSTTSSCSE
+T ss_pred             CeehhhccceECCCCCCcccccCCCCcEEEE--EEeccCceEEeCCccccCC
+Confidence            4555566777788999999999885544332  245666 788898887665
+
+
+No 16
+>1E9Y_A UREASE SUBUNIT ALPHA (E.C.3.5.1.5), UREASE; HYDROLASE, DODECAMER; 3.0A {HELICOBACTER PYLORI} SCOP: b.85.3.1, d.8.1.1
+Probab=22.71  E-value=74  Score=29.10  Aligned_cols=67  Identities=16%  Similarity=0.226  Sum_probs=43.7  Template_Neff=4.000
+
+Q T1159            74 KFAEGRMWDGRNSLPGGKAIGFCRVKGMEFFHAAVAVGG-TEIRAINGGLLGAGWLHPVDLRKVLTQKNPDG  144 (160)
+Q Consensus        74 n~~~g~~WdG~s~ip~G~aIgF~r~~~~~~FHsAIavG~-t~IRsVNG~~LG~~W~~~vdL~~vL~~~n~dG  144 (160)
+                      .|.....|--+=+||+|++|-|..-..+.+-  =+.+|| ..|.+.||..-|  +..+.++..++....+.|
+T Consensus       155 ~FdR~~A~G~RLdIpaGTavRFEPG~~k~V~--LV~~gG~r~v~G~~~l~~g--~~~~~~~~~~~~~~~~~G  222 (238)
+T 1E9Y_A          155 DFDREKTFGKRLDIAAGTAVRFEPGEEKSVE--LIDIGGNRRIFGFNALVDR--QADNESKKIALHRAKERG  222 (238)
+T ss_dssp             ESCGGGGTTEEECSSTTCEEEECTTCEEEEE--EEECCTTCEECSTTSSCCE--ECSHHHHHHHHHHHHHHT
+T ss_pred             cccHhhhCCcccccccccccccCCCCCEEEE--EEeccCCcEEeCCcccCCC--CCCcchHHHHHHHHHHcC
+Confidence            4444556667778999999999885544332  245666 789999987655  444455666664443444
+
+
+No 17
+>2AIV_A fragment of Nucleoporin NUP116/NSP116; Beta sandwich, TRANSPORT PROTEIN; NMR {Saccharomyces cerevisiae}
+Probab=21.16  E-value=83  Score=25.99  Aligned_cols=42  Identities=19%  Similarity=0.408  Sum_probs=29.5  Template_Neff=6.500
+
+Q T1159           113 TEIRAINGGLLGA------GWLHPVDLRKVLTQKNP--DGSFKYDGTDIFVY  156 (160)
+Q Consensus       113 t~IRsVNG~~LG~------~W~~~vdL~~vL~~~n~--dG~f~yd~t~I~Vy  156 (160)
+                      .+.++|.++.+|.      .|..||||+.+=  -.+  |....++...|.||
+T Consensus        21 ~eL~~V~~F~Igr~g~G~I~f~~pvDl~~ld--ld~i~~~iV~i~~~~v~vY   70 (149)
+T 2AIV_A           21 LQLRKVPHLVVGHKSYGKIEFLEPVDLAGIP--LTSLGGVIITFEPKTCIIY   70 (149)
+T ss_dssp             HHHHSCCSEEEECTTSCEEEECSCCCCSSCC--HHHHCSSSCEECSSSEECS
+T ss_pred             HHhccCCCcEEEeCCeEEEEeCCceeCCCCC--HHHcCCeEEEeCCCEEEEe
+Confidence            5677888888875      588999998762  111  24567777888887
+
+
+No 18
+>4Z42_K UREASE SUBUNIT ALPHA, UREASE SUBUNIT; hydrolase, urease, urea degradation, nitrogen; 3.01A {Yersinia enterocolitica W22703}
+Probab=21.13  E-value=84  Score=27.37  Aligned_cols=49  Identities=20%  Similarity=0.288  Sum_probs=34.8  Template_Neff=3.200
+
+Q T1159            74 KFAEGRMWDGRNSLPGGKAIGFCRVKGMEFFHAAVAVGG-TEIRAINGGLLG  124 (160)
+Q Consensus        74 n~~~g~~WdG~s~ip~G~aIgF~r~~~~~~FHsAIavG~-t~IRsVNG~~LG  124 (160)
+                      .|.....|--+-+||+|++|-|..-....+-  -+.+|| ..|.+.||..-|
+T Consensus        84 ~FDR~~A~G~RLdIPAGTaVRFEPG~~k~V~--LV~~gG~r~v~Gfnglv~G  133 (164)
+T 4Z42_K           84 EFDRAAAYGKRLNISSTTAIRFEPGDETEVP--LIPFGGKQTLYGFNNLVDG  133 (164)
+T ss_dssp             BSCGGGGTTEEESSCSSCEEEECTTCEEEEE--EEECCTTCEECCTTSSCCE
+T ss_pred             CeeHHHhcCeeCCCccccccccCCCCCEEEE--EEeecCceEEeCCcccccc
+Confidence            4555566777888999999999885544332  245666 788888887655
+
+

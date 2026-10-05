@@ -1,0 +1,107 @@
+>> Model assessment by DOPE potential
+DOPE score               : -29061.687500
+>> Model assessment by DOPE potential
+DOPE score               : -29061.687500
+>> Normalized DOPE z score: 1.190
+>> Model assessment by DOPE potential
+DOPE score               : -28836.689453
+>> Model assessment by DOPE potential
+DOPE score               : -28836.689453
+>> Normalized DOPE z score: 1.235
+>> Model assessment by DOPE potential
+DOPE score               : -29215.441406
+>> Model assessment by DOPE potential
+DOPE score               : -29215.441406
+>> Normalized DOPE z score: 1.160
+>> Model assessment by DOPE potential
+DOPE score               : -28197.312500
+>> Model assessment by DOPE potential
+DOPE score               : -28197.312500
+>> Normalized DOPE z score: 1.361
+>> Model assessment by DOPE potential
+DOPE score               : -28747.365234
+>> Model assessment by DOPE potential
+DOPE score               : -28747.365234
+>> Normalized DOPE z score: 1.253
+>> Model assessment by DOPE potential
+DOPE score               : -44235.632812
+>> Model assessment by DOPE potential
+DOPE score               : -44235.632812
+>> Normalized DOPE z score: -1.811
+>> Model assessment by DOPE potential
+DOPE score               : -44219.339844
+>> Model assessment by DOPE potential
+DOPE score               : -44219.339844
+>> Normalized DOPE z score: -1.808
+>> Model assessment by DOPE potential
+DOPE score               : -44269.347656
+>> Model assessment by DOPE potential
+DOPE score               : -44269.347656
+>> Normalized DOPE z score: -1.818
+>> Model assessment by DOPE potential
+DOPE score               : -44150.289062
+>> Model assessment by DOPE potential
+DOPE score               : -44150.289062
+>> Normalized DOPE z score: -1.795
+>> Model assessment by DOPE potential
+DOPE score               : -44207.003906
+>> Model assessment by DOPE potential
+DOPE score               : -44207.003906
+>> Normalized DOPE z score: -1.806
+>> Model assessment by DOPE potential
+DOPE score               : -29215.441406
+>> Model assessment by DOPE potential
+DOPE score               : -29215.441406
+>> Normalized DOPE z score: 1.160
+>> Model assessment by DOPE potential
+DOPE score               : -44235.632812
+>> Model assessment by DOPE potential
+DOPE score               : -44235.632812
+>> Normalized DOPE z score: -1.811
+# TBM vs AlphaFold3: model quality comparison
+
+- TBM model: `../examples/test_target/models/first_pass/test_target.B99990003.pdb` (MODELLER, template 4EHX_A, residues 103-460)
+- AF3 model: `../examples/test_target/af3/output/test_target/test_target_model.cif` (local AlphaFold3 3.0.0, full length 1-460, top-ranked of 5 samples)
+
+## Structural agreement, residue-matched (TMscore, residues 103-460)
+
+Same sequence, so each TBM residue is compared only with the same AF3 residue.
+
+| Metric | Value |
+|---|---|
+| TM-score | 0.554 |
+| RMSD (optimal superposition, 358 residues) | 8.85 Å |
+| GDT-TS | 0.325 |
+
+## Structural agreement, sequence-independent (TM-align)
+
+| Metric | Value |
+|---|---|
+| TM-score (normalized by TBM, 358 res) | 0.643 |
+| TM-score (normalized by AF3, 460 res) | 0.520 |
+| RMSD over aligned residues | 4.92 Å |
+| Aligned length | 307 |
+| Aligned pairs within 5 Å | 221 |
+| Aligned pairs at the same residue number | 137 of 307 |
+| Residue-matched CA RMSD, all 358 residues (same superposition) | 9.20 Å |
+
+## Model quality, residues 103-460
+
+| Metric | TBM | AlphaFold3 |
+|---|---|---|
+| DOPE (lower = better) | -29215.4 | -44235.6 |
+| z-DOPE (lower = better; < -1 native-like) | 1.160 | -1.811 |
+| TM-score vs template 4EHX_A | 0.742 | 0.629 |
+| Mean pLDDT (all / 103-460) | n/a | 95.6 / 95.9 |
+| pTM / ranking score | n/a | 0.93 / 0.93 |
+
+## Regions
+
+| Region | AF3 pLDDT | TBM DOPE | AF3 DOPE | CA deviation (Å) |
+|---|---|---|---|---|
+| 1-102 | 95.1 | not modeled | not scored | n/a |
+| 182-215 | 90.1 | -0.023 | -0.0396 | 9.18 |
+| 224-230 | 96.2 | -0.0117 | -0.0239 | 7.98 |
+| 331-345 | 96.8 | -0.03 | -0.0384 | 10.61 |
+
+Wrote figures and tables to /cluster/pixstor/dkhf3-lab/users/nancy/TBM_AGENT/examples/test_target/comparison_results/presentation

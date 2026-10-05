@@ -1,0 +1,16 @@
+T1147: T1147 KEK_05752, MmpS5, Mycobacterium thermoresistibile, 103 residues
+Length 103; modeled residues 1-103
+
+Templates:
+  2LW3_A (hhsearch hit 1): prob 99.6, E 9.3e-20, identity 55%, query 15-103; Putative membrane protein mmpS4
+  Choice: Only qualifying hit (screen PASS): prob 99.6, 55% identity.
+
+Best TBM model: tbm_models/T1147.B99990001.pdb (DOPE -6472.1, GA341 0.999)
+AF3 top model: af3_model/t1147/t1147_model.cif (mean pLDDT 91.2, pTM 0.79)
+TBM vs AF3: TM-score 0.596 residue-matched, 0.629 TM-align; RMSD 8.45 A residue-matched, 2.85 A TM-align over 90 residues
+
+Problems:
+  - Full sequence modeled as instructed. Residues 1-14 start with GPLGS, likely an expression-tag remnant.
+  - Template 2LW3 is an NMR ensemble; model 1 of the ensemble was used.
+  - TBM and AF3 agree in the core (10-94). The C-terminal residues 95-103 point a different way (up to 41 A apart; AF3 pLDDT about 84), probably following the NMR template's flexible end; with residues 1-9 they account for most of the 8.45 A residue-matched RMSD.
+  - Residues 1-14 have no template; MODELLER built them without template restraints.
