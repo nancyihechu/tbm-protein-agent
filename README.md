@@ -362,6 +362,10 @@ covers the derived files (trimmed structures, superpositions and figures).
 If you use them, cite: Abramson, J. et al. Accurate structure prediction of
 biomolecular interactions with AlphaFold 3. *Nature* (2024).
 
+## Demo video
+
+[demo/agent1_demo_T1147.mp4](demo/agent1_demo_T1147.mp4) shows a live run of target T1147 only, with voice over.
+
 ## License
 
 The code in this repository is released under the MIT License (see `LICENSE`).
