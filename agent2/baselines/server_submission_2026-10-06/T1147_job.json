@@ -1,0 +1,20 @@
+[
+  {
+    "name": "P2_T1147_AF3server_20261006",
+    "modelSeeds": [
+      "1"
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPLGSDDPEPFDPKVVTYEIFGTPGAVVDINYLDLDARTQRVNDVTLPWSITLSTTAPSALAHIVAQGNADHIGCRIIVDGELRVESVSTGVNAQTYCIEKSA",
+          "count": 1,
+          "useStructureTemplate": true,
+          "maxTemplateDate": "2021-09-30"
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 1
+  }
+]

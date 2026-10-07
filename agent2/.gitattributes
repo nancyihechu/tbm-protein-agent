@@ -1,0 +1,2 @@
+# Preserve exact input/output bytes and recorded SHA-256 checksums on every OS.
+* -text

@@ -367,3 +367,84 @@ biomolecular interactions with AlphaFold 3. *Nature* (2024).
 The code in this repository is released under the MIT License (see `LICENSE`).
 AlphaFold3 outputs and files derived from them remain under the AlphaFold 3
 Output Terms of Use described above.
+
+
+---
+
+# Agent 2: Experimental Structure Evaluation
+
+**Matthew - ChatGPT (Astra)**
+
+Agent 2 reads the Agent 1 artifacts described above and evaluates the selected
+TBM and AlphaFold 3 predictions against verified experimental structures. Nancy's
+existing implementation, metadata, models, and comparison results are preserved.
+The complete addition lives in [`agent2/`](agent2/README.md).
+
+## Evaluation workflow
+
+```text
+Agent 1 metadata + selected predictions    Experimental references
+                   |                              |
+                   +--------------+---------------+
+                                  v
+                 Verify target, chain, residue correspondence
+                                  |
+                 Freeze the same evaluated residues per target
+                                  |
+                  TM-score | GDT-TS | lDDT-CA | C-alpha RMSD
+                                  |
+                 Superpositions + coverage + reproducible report
+```
+
+| Target | Experimental reference | Official CASP15 domain | Classification |
+|---|---|---|---|
+| T1147 | 8EM5, chain A | 12-103 | TBM-easy |
+| T1133 | 8DYS, chain A | 4-427 | TBM-easy |
+| T1183 | 8IFX, chain B | 1-195 | TBM-easy |
+
+Reference assignments, coordinate checks, chain choices, and source hashes are
+documented in [reference provenance](agent2/references/README.md). These are
+experimental-reference accuracy measurements, separate from the TBM-versus-AF3
+agreement results above.
+
+## Agent 2 deliverables for October 9
+
+- A metrics table in CSV and JSON for each target and prediction method.
+- Superposed C-alpha structures and images with per-residue deviations.
+- Residue correspondence, observed coverage, and missing-position records.
+- Tool logs, input/code checksums, software versions, and configuration snapshots.
+- A concise report explaining results, limitations, and pending assignment items.
+
+The completed evaluation contains nine comparisons across TBM, local AF3 and
+genuine AlphaFold Server predictions. See [the Agent 2 report](agent2/results/with_server_2026-10-06/REPORT.md)
+and [the score table](agent2/results/with_server_2026-10-06/metrics.csv). The
+[earlier evaluation](agent2/results/reference_evaluation_2026-10-06/REPORT.md) remains preserved.
+See [metric definitions](agent2/METRICS.md) before interpreting the scores:
+lDDT is the C-alpha common-mask variant, and TM/GDT use the documented CASP domain
+normalization. T1133 is a partial TBM model, so its evaluated coverage is reported
+alongside quality.
+
+**Web-server requirement completed:** all three AlphaFold Server jobs finished
+on October 6. The exact submitted sequences, seed 1, all five predictions per
+target, ranking evidence, downloads and terms are preserved in
+[server provenance](agent2/baselines/server_submission_2026-10-06/README.md).
+Local and server AF3 remain separately labeled. Original server outputs and
+derivatives are subject to the [AlphaFold Server Output Terms of Use](https://alphafoldserver.com/output-terms);
+Agent 2 derivatives extract and superpose common C-alpha atoms and compute metrics
+and figures. Original models are unchanged.
+
+## Run Agent 2
+
+```bash
+python -m pip install -r agent2/requirements.txt
+python -m agent2 audit --config agent2/config_with_server.json
+python -m agent2 evaluate --config agent2/config_with_server.json --tmscore /path/to/TMscore --require-complete
+```
+
+See [setup and output instructions](agent2/README.md), the
+[ChatGPT/Astra operating prompt](agent2/AGENT_PROMPT.md), and
+[tests](agent2/tests/). Every run writes a fresh directory under `agent2/results/`.
+The evaluator never overwrites Agent 1 artifacts or an earlier evaluation.
+
+An untouched source ZIP and full-history Git bundle were preserved before this
+addition, at upstream commit `d65f2b5ae2acb150704bf20347604c3de3b896c3`.

@@ -1,0 +1,124 @@
+{
+  "request_file": "fold_p2_t1147_af3server_20261006_job_request.json",
+  "request": {
+    "name": "P2_T1147_AF3server_20261006",
+    "modelSeeds": [
+      "1"
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "GPLGSDDPEPFDPKVVTYEIFGTPGAVVDINYLDLDARTQRVNDVTLPWSITLSTTAPSALAHIVAQGNADHIGCRIIVDGELRVESVSTGVNAQTYCIEKSA",
+          "count": 1,
+          "useStructureTemplate": true,
+          "maxTemplateDate": "2021-09-30"
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 3
+  },
+  "actual_settings": {
+    "useStructureTemplate": true,
+    "maxTemplateDate": "2021-09-30",
+    "maxTemplateDate_record": "2021-09-30",
+    "effective_max_template_date_verified": true,
+    "documented_useStructureTemplate_default": true,
+    "documented_maximum_allowed_template_date": "2025-02-03",
+    "documented_default_template_cutoff": null,
+    "documentation_note": "The cited JSON README documents the maximum allowed date, not the default maxTemplateDate. An omitted effective cutoff cannot be inferred from that maximum."
+  },
+  "differences_from_prepared": [
+    {
+      "field": "exported_schema_version",
+      "prepared": 1,
+      "actual": 3
+    }
+  ],
+  "samples_ranked": [
+    {
+      "sample_index": 0,
+      "ranking_score": 0.83,
+      "model_file": "fold_p2_t1147_af3server_20261006_model_0.cif",
+      "confidence_file": "fold_p2_t1147_af3server_20261006_summary_confidences_0.json",
+      "full_data_file": "fold_p2_t1147_af3server_20261006_full_data_0.json"
+    },
+    {
+      "sample_index": 1,
+      "ranking_score": 0.83,
+      "model_file": "fold_p2_t1147_af3server_20261006_model_1.cif",
+      "confidence_file": "fold_p2_t1147_af3server_20261006_summary_confidences_1.json",
+      "full_data_file": "fold_p2_t1147_af3server_20261006_full_data_1.json"
+    },
+    {
+      "sample_index": 2,
+      "ranking_score": 0.82,
+      "model_file": "fold_p2_t1147_af3server_20261006_model_2.cif",
+      "confidence_file": "fold_p2_t1147_af3server_20261006_summary_confidences_2.json",
+      "full_data_file": "fold_p2_t1147_af3server_20261006_full_data_2.json"
+    },
+    {
+      "sample_index": 3,
+      "ranking_score": 0.81,
+      "model_file": "fold_p2_t1147_af3server_20261006_model_3.cif",
+      "confidence_file": "fold_p2_t1147_af3server_20261006_summary_confidences_3.json",
+      "full_data_file": "fold_p2_t1147_af3server_20261006_full_data_3.json"
+    },
+    {
+      "sample_index": 4,
+      "ranking_score": 0.81,
+      "model_file": "fold_p2_t1147_af3server_20261006_model_4.cif",
+      "confidence_file": "fold_p2_t1147_af3server_20261006_summary_confidences_4.json",
+      "full_data_file": "fold_p2_t1147_af3server_20261006_full_data_4.json"
+    }
+  ],
+  "primary": {
+    "sample_index": 0,
+    "ranking_score": 0.83,
+    "model_file": "fold_p2_t1147_af3server_20261006_model_0.cif",
+    "confidence_file": "fold_p2_t1147_af3server_20261006_summary_confidences_0.json",
+    "full_data_file": "fold_p2_t1147_af3server_20261006_full_data_0.json"
+  },
+  "chain": "A",
+  "mapping_mode": "author_number_equals_target",
+  "terms_files": [
+    "terms_of_use.md"
+  ],
+  "member_count": 24,
+  "archive_source": "C:\\Users\\matty\\Downloads\\fold_p2_t1147_af3server_20261006.zip",
+  "archive_sha256": "bf527c1c442e490d17d68fa4052e6dd5893b259078fefb3cc9b6ad7ea970fbb7",
+  "job_url": "https://alphafoldserver.com/fold/41cb32c284a7a5d7",
+  "job_id": "41cb32c284a7a5d7",
+  "source_fasta": "targets/T1147/T1147.fasta",
+  "source_fasta_sha256": "a893341e31ca4d0f232db80c1a1a2eb0bab563d4624fe5b9233b08747665c26c",
+  "sequence_length": 103,
+  "preserved_archive": "agent2/baselines/server_submission_2026-10-06/imported/T1147/fold_p2_t1147_af3server_20261006.zip",
+  "output_files_sha256": {
+    "fold_p2_t1147_af3server_20261006_full_data_0.json": "2ae485e8a994b1c71d1cbe04c7740df928fa9b617c982a15208bedcfaebab197",
+    "fold_p2_t1147_af3server_20261006_full_data_1.json": "0af8f33bf58a2d061ebaab594095ac83dd8965a3b44d2436de30e311ff3c51f2",
+    "fold_p2_t1147_af3server_20261006_full_data_2.json": "6c13e7b3b524d1da6cb593976a4791b56aaf2e6b4c637865a2b31755456a11a7",
+    "fold_p2_t1147_af3server_20261006_full_data_3.json": "dea9ee25cbf8af3a444e92a24ee87b54db99409ecc1efb051ac1194ca3c1c551",
+    "fold_p2_t1147_af3server_20261006_full_data_4.json": "1bfab17c8e08d4fccdf47dd1bf4690fc6c1439faccf33aea05add5b8574e7c12",
+    "fold_p2_t1147_af3server_20261006_job_request.json": "e8dcfe9328440505d0ca874abf1c2c9ca67f533b21872ed378e56541137d802d",
+    "fold_p2_t1147_af3server_20261006_model_0.cif": "ed0d57304d96a08b6efc426b87ea1c217fdaf016ac689379276746d44443497b",
+    "fold_p2_t1147_af3server_20261006_model_1.cif": "ba950a9ff4b6aef7260aff5d7ecd5144a7b5ab1c1d64ce85fb40ff520d3f1e49",
+    "fold_p2_t1147_af3server_20261006_model_2.cif": "23aa7d97d581f66246da902939158359adac7535e750122d871a7f84b7bb22a1",
+    "fold_p2_t1147_af3server_20261006_model_3.cif": "aeea169c5e7c9313dacead831c2acfee0609e8fe0df84fc30095a24c3b4edbe0",
+    "fold_p2_t1147_af3server_20261006_model_4.cif": "f0672d58850254e1988f4fbfb85abef5246a7648798a8f1e6057a82e554af854",
+    "fold_p2_t1147_af3server_20261006_summary_confidences_0.json": "7af1795d94d94fc41f2f909b74afd4d061afb29a170dac9ede0080871a3193b5",
+    "fold_p2_t1147_af3server_20261006_summary_confidences_1.json": "7af1795d94d94fc41f2f909b74afd4d061afb29a170dac9ede0080871a3193b5",
+    "fold_p2_t1147_af3server_20261006_summary_confidences_2.json": "8c6869a291f373315af0430df396ee875b695b7ecf93510d5352688149d0cf8c",
+    "fold_p2_t1147_af3server_20261006_summary_confidences_3.json": "fd59ea07eacd4fee2daa979a495e7e7db15233a41c66ae7ff092814f355ce60b",
+    "fold_p2_t1147_af3server_20261006_summary_confidences_4.json": "0bda273f790affefb772707ca4c03a98dc81be8355bb33613484ab5e99542ea5",
+    "msas/fold_p2_t1147_af3server_20261006_paired_msa_chains_a.a3m": "e7045f055bfe878b2a20b4440503e5e4d6f6b3a4fa68ae8419ad76049056042d",
+    "msas/fold_p2_t1147_af3server_20261006_unpaired_msa_chains_a.a3m": "445eb3b163740287c63147a28ec6a4a8dca4029bba6e5b851469b74a5c4946df",
+    "templates/fold_p2_t1147_af3server_20261006_template_hit_0_chains_a.cif": "6b6643f57d6c4e43059735ceed46a5839e7975f3d6acb926717dc52c43374ff2",
+    "templates/fold_p2_t1147_af3server_20261006_template_hit_1_chains_a.cif": "8a5190eba6105d4621e69f14d4f3bc7e5a040132a63cce2b461b7b9376fbcaed",
+    "templates/fold_p2_t1147_af3server_20261006_template_hit_2_chains_a.cif": "8a5190eba6105d4621e69f14d4f3bc7e5a040132a63cce2b461b7b9376fbcaed",
+    "templates/fold_p2_t1147_af3server_20261006_template_hit_3_chains_a.cif": "4fd447ff4fe9f6092ee2d154c33858b103953ba3aff69488096bb69cb46f3ca0",
+    "templates/fold_p2_t1147_af3server_20261006_template_hits_chains_a_query_to_hit.json": "219df1158b1403fdac8ab0f5a022b6a47cee7a9da25e1d38689af610709abdac",
+    "terms_of_use.md": "1ae90834413742f5185041af2e1bc7982321e2938b3b0c5367e00edd34c61df4"
+  },
+  "selection_rule": "Highest exported server ranking_score; lowest sample index for rounded ties; fixed before truth scoring",
+  "status": "VALIDATED_IMPORTED_NOT_REFERENCE_SCORED"
+}

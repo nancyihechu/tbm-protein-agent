@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "target": "T1183",
+    "method": "tbm",
+    "status": "SCORED",
+    "model": "targets\\T1183\\tbm_models\\T1183.B99990005.pdb",
+    "reference": "8IFX:B",
+    "domain": "T1183-D1",
+    "target_length": 200,
+    "normalization_length": 195,
+    "matched_ca": 195,
+    "observed_reference_ca_in_domain": 195,
+    "model_ca_in_full_target": 200,
+    "evaluated_fraction_of_domain": 1.0,
+    "model_coverage_of_full_target": 1.0,
+    "tm_score": 0.7495,
+    "gdt_ts": 0.609,
+    "lddt_ca_common_mask": 0.6444593756460616,
+    "rmsd_ca_angstrom": 5.293420715651889,
+    "tmscore_status": "AVAILABLE"
+  },
+  "lddt_details": {
+    "score": 0.6444593756460616,
+    "eligible_reference_pairs": 4837,
+    "conserved_by_threshold": [
+      1796,
+      2697,
+      3664,
+      4312
+    ],
+    "thresholds_angstrom": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "radius_angstrom": 15.0,
+    "missing_mobile_residues": 0,
+    "scope": "lDDT-Calpha on supplied fixed residue mask; no stereochemical checks",
+    "status": "AVAILABLE",
+    "source": "https://openstructure.org/docs/2.11/mol/alg/lddt/"
+  },
+  "tmscore_details": {
+    "tm_score": 0.7495,
+    "gdt_ts": 0.609,
+    "gdt_ts_native_mask_normalized": 0.609,
+    "reference_normalization_length": 195,
+    "frozen_mask_count": 195,
+    "gdt_normalization": "Official optimized GDT counts / declared reference length (rescaled from native mask length)",
+    "gdt_status": "AVAILABLE",
+    "status": "AVAILABLE",
+    "source": "https://github.com/pylelab/USalign/blob/master/TMscore.cpp",
+    "command": [
+      "agent2/.tools\\TMscore.exe",
+      "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\results\\with_server_2026-10-06\\T1183\\tbm\\model_common_ca.pdb",
+      "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\results\\with_server_2026-10-06\\T1183\\reference_common_ca.pdb",
+      "-l",
+      "195"
+    ],
+    "executable_sha256": "0431ba2500ba588f1d6a88620aa140f02223eda9224771427b7bade5c67c14a3",
+    "stdout": "\n *************************************************************************\n *                                 TM-SCORE                              *\n * A scoring function to assess the similarity of protein structures     *\n * Based on statistics:                                                  *\n *       0.0 < TM-score < 0.17, random structural similarity             *\n *       0.5 < TM-score < 1.00, in about the same fold                   *\n * Reference: Yang Zhang and Jeffrey Skolnick, Proteins 2004 57: 702-710 *\n * For comments, please email to: zhanglab@zhanggroup.org                *\n *************************************************************************\n\nStructure1: C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\results\\with_server_2026-10-06\\T1183\\tbm\\model_common_ca.pdb    Length=  195\nStructure2: C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\results\\with_server_2026-10-06\\T1183\\reference_common_ca.pdb    Length=  195 (by which all scores are normalized)\nNumber of residues in common=  195\nRMSD of  the common residues=    5.293\n\nTM-score    = 0.7495  (d0= 5.20)\nMaxSub-score= 0.5627  (d0= 3.50)\nGDT-TS-score= 0.6090 %(d<1)=0.2513 %(d<2)=0.4974 %(d<4)=0.7436 %(d<8)=0.9436\nGDT-HA-score= 0.4064 %(d<0.5)=0.1333 %(d<1)=0.2513 %(d<2)=0.4974 %(d<4)=0.7436\nTM-score    = 0.7495  (if normalized by user-specified LN=195.00 and d0=5.20)\n\n -------- rotation matrix to rotate Chain-1 to Chain-2 ------\n i          t(i)         u(i,1)         u(i,2)         u(i,3)\n 1    -51.9774315753   0.4961177013   0.8575575671   0.1358758462\n 2     75.3935939600   0.8682418873  -0.4891284065  -0.0831229638\n 3     29.5331205200  -0.0048219904   0.1592118749  -0.9872326612\n\nSuperposition in the TM-score: Length(d<5.0)= 153\n(\":\" denotes the residue pairs of distance < 5.0 Angstrom)\nMKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPP\n:::::::::::::::::::   :::::::::::::::::::       ::::::::::::::::::::::::::::::::::::::::::::::::::: : ::::::::   ::::::::   :::::::::: :::: :                   ::::::::::::::::::  :::::::::::::: \nMKILSIDTSFSFINFSVIEEEKVTFLHYLKSNKKTLELLPKIFEELCIRPENFDAFAVSVGVGYLTSLRIGVTFVKTWAYTLGKPVVSYKNLELLAKKTPVPFPKIPYLKVGSNVFYQIFEESSSSEVKVFKGEELRGYGISLKEFEDIKLGEKQFFHDIFPFSAYGGIYAYEFLKENPEGENVFEIEPIYVKPP\n123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345\n\n",
+    "stderr": ""
+  },
+  "model_sha256": "edf5e882d229d2fd83d58c21887d0c5c8423dc9e79ef7de118f94deeed9204d5",
+  "reference_sha256": "8a4a3eb36c50debb971e28365c07247271a862261c442107b8b2cad58f5157ec",
+  "reference_altloc": "highest occupancy; ties require explicit selection",
+  "missing_ca_records": [],
+  "reference_missing_ca_records": []
+}

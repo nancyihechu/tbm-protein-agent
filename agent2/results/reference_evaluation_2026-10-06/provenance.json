@@ -1,0 +1,17 @@
+{
+  "versions": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "biopython": "1.88",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  },
+  "config_sha256": "ab2b2e7ab6bf94a67935649277ff17ed5b50701524bcf365eed3cdeededaa027",
+  "code_sha256": {
+    "agent2\\metrics.py": "9d91a0f6678d64fc2821e2e88befc6004210b14abba70df9103b86827c701835",
+    "agent2\\workflow.py": "02e18c344e1f783b4149611493b557993c8f3ca84d72d1061b7ff9cdfe1a1377",
+    "agent2\\__init__.py": "8ce8077cdfb39d4b71dd18d0bd5b03c6b474b16d475545fc64d74ab9df50c3da",
+    "agent2\\__main__.py": "b23175bc0134c9451319e80f2bc6a42d5ba5361ca11fa64b53afef7f64fcb9bd"
+  },
+  "tmscore_requested": "agent2/.tools/TMscore.exe"
+}

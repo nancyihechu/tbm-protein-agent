@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "status": "PARTIAL_ASSIGNMENT",
+  "command": "evaluate",
+  "created_utc": "2026-10-06T18:28:55.628923+00:00",
+  "source_commit": "d65f2b5ae2acb150704bf20347604c3de3b896c3",
+  "audit": [
+    {
+      "target": "T1147",
+      "status": "INPUTS_PRESENT",
+      "target_length": 103,
+      "domain": "T1147-D1",
+      "domain_range": [
+        12,
+        103
+      ],
+      "classification": "TBM-easy",
+      "reference": {
+        "path": "agent2/references/8EM5.cif",
+        "pdb_id": "8EM5",
+        "chain": "A",
+        "model_index": 0,
+        "sha256": "41bced682b3a5b88754a7771eda126766bcca695036d6d2be744035f7dccc89b",
+        "source_url": "https://files.rcsb.org/download/8EM5.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Official CASP15 mapping is 8EM5. Entity 1 is an exact 103-residue FASTA match; chain A was fixed as the first author-chain copy among A-F. All 92 observed chain-A C-alpha residues match FASTA positions 12-103 at auth_seq_id; residues 1-11 are unobserved."
+      },
+      "models": [
+        {
+          "method": "tbm",
+          "chain": "A",
+          "model_index": 0,
+          "mapping_mode": "author_number_equals_target",
+          "path": "targets\\T1147\\tbm_models\\T1147.B99990001.pdb",
+          "sha256": "89f939414a9d9698dee9e52165572a274df95019b5d8066c6329cb98af3bd4b7"
+        },
+        {
+          "method": "alphafold3_local",
+          "chain": "A",
+          "model_index": 0,
+          "mapping_mode": "author_number_equals_target",
+          "path": "targets\\T1147\\af3_model\\t1147\\t1147_model.cif",
+          "sha256": "a90f302d8e3b9da65e3a35c7adfa2953af34f2c43ef740e38180d6981f5d4f08"
+        }
+      ],
+      "fasta_sha256": "a893341e31ca4d0f232db80c1a1a2eb0bab563d4624fe5b9233b08747665c26c",
+      "metadata_sha256": "e350dd6901d62b41fa6ed8cca244397056d9879371a5b9f8a74990751e32a44c",
+      "tbm_selection": "Agent 1 best_model selected by DOPE before experimental evaluation",
+      "af3_selection": "Agent 1 top-ranked model, fixed before experimental evaluation",
+      "tbm_modeled_range": [
+        1,
+        103
+      ],
+      "template_accession_check": "No exact reference accession in recorded templates; this is not a training-data audit",
+      "af3_server_status": "NOT_PROVIDED",
+      "agent1_problems": [
+        "Full sequence modeled as instructed. Residues 1-14 start with GPLGS, likely an expression-tag remnant.",
+        "Template 2LW3 is an NMR ensemble; model 1 of the ensemble was used.",
+        "TBM and AF3 agree in the core (10-94). The C-terminal residues 95-103 point a different way (up to 41 A apart; AF3 pLDDT about 84), probably following the NMR template's flexible end; with residues 1-9 they account for most of the 8.45 A residue-matched RMSD.",
+        "Residues 1-14 have no template; MODELLER built them without template restraints."
+      ]
+    },
+    {
+      "target": "T1133",
+      "status": "INPUTS_PRESENT",
+      "target_length": 585,
+      "domain": "T1133-D1",
+      "domain_range": [
+        4,
+        427
+      ],
+      "classification": "TBM-easy",
+      "reference": {
+        "path": "agent2/references/8DYS.cif",
+        "pdb_id": "8DYS",
+        "chain": "A",
+        "model_index": 0,
+        "altloc": "A",
+        "sha256": "4213eab7013a47d1fdd2c1392dbedf4013ccb3191ead916188e5f7d203b290e3",
+        "source_url": "https://files.rcsb.org/download/8DYS.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Official CASP15 mapping is 8DYS and chain A is the sole protein chain. Entity 1 contains an 18-residue N-terminal tag followed by the exact 585-residue FASTA. label_seq_id equals target position plus 18, but auth_seq_id equals target position. All 409 observed C-alpha residues match FASTA positions 4-98, 105-241, and 251-427."
+      },
+      "models": [
+        {
+          "method": "tbm",
+          "chain": "A",
+          "model_index": 0,
+          "mapping_mode": "author_number_equals_target",
+          "path": "targets\\T1133\\tbm_models\\T1133.B99990005.pdb",
+          "sha256": "2e2b94670abbd32220862c124bf6b519314795511d5887f03b5f878029d7fd57"
+        },
+        {
+          "method": "alphafold3_local",
+          "chain": "A",
+          "model_index": 0,
+          "mapping_mode": "author_number_equals_target",
+          "path": "targets\\T1133\\af3_model\\t1133\\t1133_model.cif",
+          "sha256": "0aa914ab84a67eab5e214547115c76b7c6c11e74636eaa45f274c7c9557dbbc8"
+        }
+      ],
+      "fasta_sha256": "99175cb90a68a5cd1b6b20a77112f9a862895abe66e005c97cbb25efeb020ba5",
+      "metadata_sha256": "080efc2bb09b79ee770f9764f41628315f23c1569e4a99bdf87460a7129a3f9b",
+      "tbm_selection": "Agent 1 best_model selected by DOPE before experimental evaluation",
+      "af3_selection": "Agent 1 top-ranked model, fixed before experimental evaluation",
+      "tbm_modeled_range": [
+        5,
+        418
+      ],
+      "template_accession_check": "No exact reference accession in recorded templates; this is not a training-data audit",
+      "af3_server_status": "NOT_PROVIDED",
+      "agent1_problems": [
+        "Modeled only the template-covered range 5-418; residues 1-4 and 419-585 are not in the TBM model.",
+        "3WJ9_B has 10 unresolved residues; they appear as gaps in the template row of the alignment.",
+        "AF3 ran on the first attempt; the unified-memory retry was not needed."
+      ]
+    },
+    {
+      "target": "T1183",
+      "status": "INPUTS_PRESENT",
+      "target_length": 200,
+      "domain": "T1183-D1",
+      "domain_range": [
+        1,
+        195
+      ],
+      "classification": "TBM-easy",
+      "reference": {
+        "path": "agent2/references/8IFX.cif",
+        "pdb_id": "8IFX",
+        "chain": "B",
+        "model_index": 0,
+        "sha256": "8a4a3eb36c50debb971e28365c07247271a862261c442107b8b2cad58f5157ec",
+        "source_url": "https://files.rcsb.org/download/8IFX.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Current official CASP15 target and domain tables link 8IFX. Entity 2, author chain B (TsaB), exactly matches the 200-residue FASTA; chain A is TsaD. All 195 observed chain-B C-alpha residues match FASTA positions 1-195 at auth_seq_id; residues 196-200 are unobserved. The target-provider paper cites related 8IEY instead; that discrepancy is documented in references/README.md."
+      },
+      "models": [
+        {
+          "method": "tbm",
+          "chain": "A",
+          "model_index": 0,
+          "mapping_mode": "author_number_equals_target",
+          "path": "targets\\T1183\\tbm_models\\T1183.B99990005.pdb",
+          "sha256": "edf5e882d229d2fd83d58c21887d0c5c8423dc9e79ef7de118f94deeed9204d5"
+        },
+        {
+          "method": "alphafold3_local",
+          "chain": "A",
+          "model_index": 0,
+          "mapping_mode": "author_number_equals_target",
+          "path": "targets\\T1183\\af3_model\\t1183\\t1183_model.cif",
+          "sha256": "12d8c6eca744702dfaf1d2784698c64fe24005e5ad843375f61bc26053464b93"
+        }
+      ],
+      "fasta_sha256": "0410c6782badc444606a24a3c152ada33256dec7ed71eeac00aab17b2c94a3f1",
+      "metadata_sha256": "772e088fdec0b94f96fcf0ebe1f20cb1f00eef24555c4915a4462dac169b204f",
+      "tbm_selection": "Agent 1 best_model selected by DOPE before experimental evaluation",
+      "af3_selection": "Agent 1 top-ranked model, fixed before experimental evaluation",
+      "tbm_modeled_range": [
+        1,
+        200
+      ],
+      "template_accession_check": "No exact reference accession in recorded templates; this is not a training-data audit",
+      "af3_server_status": "NOT_PROVIDED",
+      "agent1_problems": [
+        "All three templates are the same protein (T. maritima TsaB), so they add little structural diversity.",
+        "HHsearch placed one or two gaps differently for 2A6A_A (near residues 10-12 and 23); 2A6A_A has 25 unresolved residues including its C-terminal tail.",
+        "Identity to every template is 24-25%, below the 30% screening cutoff (screen FAIL); expect register errors.",
+        "Residue 200 has no template; MODELLER built it without template restraints."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "target": "T1147",
+      "method": "tbm",
+      "status": "SCORED",
+      "model": "targets\\T1147\\tbm_models\\T1147.B99990001.pdb",
+      "reference": "8EM5:A",
+      "domain": "T1147-D1",
+      "target_length": 103,
+      "normalization_length": 92,
+      "matched_ca": 92,
+      "observed_reference_ca_in_domain": 92,
+      "model_ca_in_full_target": 103,
+      "evaluated_fraction_of_domain": 1.0,
+      "model_coverage_of_full_target": 1.0,
+      "tm_score": 0.6338,
+      "gdt_ts": 0.6005,
+      "lddt_ca_common_mask": 0.5289836567926456,
+      "rmsd_ca_angstrom": 7.804298246696185,
+      "tmscore_status": "AVAILABLE"
+    },
+    {
+      "target": "T1147",
+      "method": "alphafold3_local",
+      "status": "SCORED",
+      "model": "targets\\T1147\\af3_model\\t1147\\t1147_model.cif",
+      "reference": "8EM5:A",
+      "domain": "T1147-D1",
+      "target_length": 103,
+      "normalization_length": 92,
+      "matched_ca": 92,
+      "observed_reference_ca_in_domain": 92,
+      "model_ca_in_full_target": 103,
+      "evaluated_fraction_of_domain": 1.0,
+      "model_coverage_of_full_target": 1.0,
+      "tm_score": 0.9827,
+      "gdt_ts": 0.9946,
+      "lddt_ca_common_mask": 0.9763789581205311,
+      "rmsd_ca_angstrom": 0.4725554379685405,
+      "tmscore_status": "AVAILABLE"
+    },
+    {
+      "target": "T1147",
+      "method": "alphafold3_server",
+      "status": "NOT_PROVIDED",
+      "reference": "8EM5:A",
+      "domain": "T1147-D1",
+      "tm_score": null,
+      "gdt_ts": null,
+      "lddt_ca_common_mask": null,
+      "rmsd_ca_angstrom": null
+    },
+    {
+      "target": "T1133",
+      "method": "tbm",
+      "status": "SCORED",
+      "model": "targets\\T1133\\tbm_models\\T1133.B99990005.pdb",
+      "reference": "8DYS:A",
+      "domain": "T1133-D1",
+      "target_length": 585,
+      "normalization_length": 424,
+      "matched_ca": 399,
+      "observed_reference_ca_in_domain": 409,
+      "model_ca_in_full_target": 414,
+      "evaluated_fraction_of_domain": 0.9410377358490566,
+      "model_coverage_of_full_target": 0.7076923076923077,
+      "tm_score": 0.8535,
+      "gdt_ts": 0.6945799528301886,
+      "lddt_ca_common_mask": 0.7294776119402985,
+      "rmsd_ca_angstrom": 3.8126595962781082,
+      "tmscore_status": "AVAILABLE"
+    },
+    {
+      "target": "T1133",
+      "method": "alphafold3_local",
+      "status": "SCORED",
+      "model": "targets\\T1133\\af3_model\\t1133\\t1133_model.cif",
+      "reference": "8DYS:A",
+      "domain": "T1133-D1",
+      "target_length": 585,
+      "normalization_length": 424,
+      "matched_ca": 399,
+      "observed_reference_ca_in_domain": 409,
+      "model_ca_in_full_target": 585,
+      "evaluated_fraction_of_domain": 0.9410377358490566,
+      "model_coverage_of_full_target": 1.0,
+      "tm_score": 0.9266,
+      "gdt_ts": 0.9020787735849056,
+      "lddt_ca_common_mask": 0.9433213678443227,
+      "rmsd_ca_angstrom": 1.0119128330116944,
+      "tmscore_status": "AVAILABLE"
+    },
+    {
+      "target": "T1133",
+      "method": "alphafold3_server",
+      "status": "NOT_PROVIDED",
+      "reference": "8DYS:A",
+      "domain": "T1133-D1",
+      "tm_score": null,
+      "gdt_ts": null,
+      "lddt_ca_common_mask": null,
+      "rmsd_ca_angstrom": null
+    },
+    {
+      "target": "T1183",
+      "method": "tbm",
+      "status": "SCORED",
+      "model": "targets\\T1183\\tbm_models\\T1183.B99990005.pdb",
+      "reference": "8IFX:B",
+      "domain": "T1183-D1",
+      "target_length": 200,
+      "normalization_length": 195,
+      "matched_ca": 195,
+      "observed_reference_ca_in_domain": 195,
+      "model_ca_in_full_target": 200,
+      "evaluated_fraction_of_domain": 1.0,
+      "model_coverage_of_full_target": 1.0,
+      "tm_score": 0.7495,
+      "gdt_ts": 0.609,
+      "lddt_ca_common_mask": 0.6444593756460616,
+      "rmsd_ca_angstrom": 5.293420715651889,
+      "tmscore_status": "AVAILABLE"
+    },
+    {
+      "target": "T1183",
+      "method": "alphafold3_local",
+      "status": "SCORED",
+      "model": "targets\\T1183\\af3_model\\t1183\\t1183_model.cif",
+      "reference": "8IFX:B",
+      "domain": "T1183-D1",
+      "target_length": 200,
+      "normalization_length": 195,
+      "matched_ca": 195,
+      "observed_reference_ca_in_domain": 195,
+      "model_ca_in_full_target": 200,
+      "evaluated_fraction_of_domain": 1.0,
+      "model_coverage_of_full_target": 1.0,
+      "tm_score": 0.9866,
+      "gdt_ts": 0.9808,
+      "lddt_ca_common_mask": 0.9625801116394459,
+      "rmsd_ca_angstrom": 0.6179274232789219,
+      "tmscore_status": "AVAILABLE"
+    },
+    {
+      "target": "T1183",
+      "method": "alphafold3_server",
+      "status": "NOT_PROVIDED",
+      "reference": "8IFX:B",
+      "domain": "T1183-D1",
+      "tm_score": null,
+      "gdt_ts": null,
+      "lddt_ca_common_mask": null,
+      "rmsd_ca_angstrom": null
+    }
+  ],
+  "pending": [
+    "T1147: obtain AlphaFold web-server output using the identical FASTA; record job provenance and evaluate it.",
+    "T1133: obtain AlphaFold web-server output using the identical FASTA; record job provenance and evaluate it.",
+    "T1183: obtain AlphaFold web-server output using the identical FASTA; record job provenance and evaluate it."
+  ],
+  "errors": []
+}

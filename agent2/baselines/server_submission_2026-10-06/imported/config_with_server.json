@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "agent": "ChatGPT (Astra)",
+  "source_commit": "d65f2b5ae2acb150704bf20347604c3de3b896c3",
+  "tmscore_executable": null,
+  "targets": [
+    {
+      "target": "T1147",
+      "metadata": "targets/T1147/metadata.json",
+      "domain_id": "T1147-D1",
+      "domain_range": [
+        12,
+        103
+      ],
+      "normalization_length": 92,
+      "classification": "TBM-easy",
+      "classification_source": "https://predictioncenter.org/casp15/domains_summary.cgi",
+      "reference": {
+        "path": "agent2/references/8EM5.cif",
+        "pdb_id": "8EM5",
+        "chain": "A",
+        "model_index": 0,
+        "sha256": "41bced682b3a5b88754a7771eda126766bcca695036d6d2be744035f7dccc89b",
+        "source_url": "https://files.rcsb.org/download/8EM5.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Official CASP15 mapping is 8EM5. Entity 1 is an exact 103-residue FASTA match; chain A was fixed as the first author-chain copy among A-F. All 92 observed chain-A C-alpha residues match FASTA positions 12-103 at auth_seq_id; residues 1-11 are unobserved."
+      },
+      "tbm_chain": "A",
+      "af3_chain": "A",
+      "af3_server": {
+        "path": "agent2/baselines/server_submission_2026-10-06/imported/T1147/outputs/fold_p2_t1147_af3server_20261006_model_0.cif",
+        "submitted_fasta": "agent2/baselines/server_submission_2026-10-06/imported/T1147/submitted.fasta",
+        "chain": "A",
+        "model_index": 0,
+        "mapping_mode": "author_number_equals_target",
+        "job_id": "41cb32c284a7a5d7",
+        "source_url": "https://alphafoldserver.com/fold/41cb32c284a7a5d7",
+        "import_provenance": "agent2/baselines/server_submission_2026-10-06/imported/T1147/provenance.json",
+        "ranking_score": 0.83,
+        "sample_index": 0,
+        "actual_settings": {
+          "useStructureTemplate": true,
+          "maxTemplateDate": "2021-09-30",
+          "maxTemplateDate_record": "2021-09-30",
+          "effective_max_template_date_verified": true,
+          "documented_useStructureTemplate_default": true,
+          "documented_maximum_allowed_template_date": "2025-02-03",
+          "documented_default_template_cutoff": null,
+          "documentation_note": "The cited JSON README documents the maximum allowed date, not the default maxTemplateDate. An omitted effective cutoff cannot be inferred from that maximum."
+        },
+        "differences_from_prepared": [
+          {
+            "field": "exported_schema_version",
+            "prepared": 1,
+            "actual": 3
+          }
+        ]
+      }
+    },
+    {
+      "target": "T1133",
+      "metadata": "targets/T1133/metadata.json",
+      "domain_id": "T1133-D1",
+      "domain_range": [
+        4,
+        427
+      ],
+      "normalization_length": 424,
+      "classification": "TBM-easy",
+      "classification_source": "https://predictioncenter.org/casp15/domains_summary.cgi",
+      "reference": {
+        "path": "agent2/references/8DYS.cif",
+        "pdb_id": "8DYS",
+        "chain": "A",
+        "model_index": 0,
+        "altloc": "A",
+        "sha256": "4213eab7013a47d1fdd2c1392dbedf4013ccb3191ead916188e5f7d203b290e3",
+        "source_url": "https://files.rcsb.org/download/8DYS.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Official CASP15 mapping is 8DYS and chain A is the sole protein chain. Entity 1 contains an 18-residue N-terminal tag followed by the exact 585-residue FASTA. label_seq_id equals target position plus 18, but auth_seq_id equals target position. All 409 observed C-alpha residues match FASTA positions 4-98, 105-241, and 251-427."
+      },
+      "tbm_chain": "A",
+      "af3_chain": "A",
+      "af3_server": {
+        "path": "agent2/baselines/server_submission_2026-10-06/imported/T1133/outputs/fold_p2_t1133_af3server_20261006_model_0.cif",
+        "submitted_fasta": "agent2/baselines/server_submission_2026-10-06/imported/T1133/submitted.fasta",
+        "chain": "A",
+        "model_index": 0,
+        "mapping_mode": "author_number_equals_target",
+        "job_id": "6d32ec7dd204db3e",
+        "source_url": "https://alphafoldserver.com/fold/6d32ec7dd204db3e",
+        "import_provenance": "agent2/baselines/server_submission_2026-10-06/imported/T1133/provenance.json",
+        "ranking_score": 0.87,
+        "sample_index": 0,
+        "actual_settings": {
+          "useStructureTemplate": true,
+          "maxTemplateDate": null,
+          "maxTemplateDate_record": "server default; not serialized in downloaded request",
+          "effective_max_template_date_verified": false,
+          "documented_useStructureTemplate_default": true,
+          "documented_maximum_allowed_template_date": "2025-02-03",
+          "documented_default_template_cutoff": null,
+          "documentation_note": "The cited JSON README documents the maximum allowed date, not the default maxTemplateDate. An omitted effective cutoff cannot be inferred from that maximum."
+        },
+        "differences_from_prepared": [
+          {
+            "field": "exported_schema_version",
+            "prepared": 1,
+            "actual": 3
+          },
+          {
+            "field": "maxTemplateDate",
+            "prepared": "2021-09-30",
+            "actual": "omitted in exported request"
+          }
+        ]
+      }
+    },
+    {
+      "target": "T1183",
+      "metadata": "targets/T1183/metadata.json",
+      "domain_id": "T1183-D1",
+      "domain_range": [
+        1,
+        195
+      ],
+      "normalization_length": 195,
+      "classification": "TBM-easy",
+      "classification_source": "https://predictioncenter.org/casp15/domains_summary.cgi",
+      "reference": {
+        "path": "agent2/references/8IFX.cif",
+        "pdb_id": "8IFX",
+        "chain": "B",
+        "model_index": 0,
+        "sha256": "8a4a3eb36c50debb971e28365c07247271a862261c442107b8b2cad58f5157ec",
+        "source_url": "https://files.rcsb.org/download/8IFX.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Current official CASP15 target and domain tables link 8IFX. Entity 2, author chain B (TsaB), exactly matches the 200-residue FASTA; chain A is TsaD. All 195 observed chain-B C-alpha residues match FASTA positions 1-195 at auth_seq_id; residues 196-200 are unobserved. The target-provider paper cites related 8IEY instead; that discrepancy is documented in references/README.md."
+      },
+      "tbm_chain": "A",
+      "af3_chain": "A",
+      "af3_server": {
+        "path": "agent2/baselines/server_submission_2026-10-06/imported/T1183/outputs/fold_p2_t1183_af3server_20261006_model_0.cif",
+        "submitted_fasta": "agent2/baselines/server_submission_2026-10-06/imported/T1183/submitted.fasta",
+        "chain": "A",
+        "model_index": 0,
+        "mapping_mode": "author_number_equals_target",
+        "job_id": "156d096f94d69fb",
+        "source_url": "https://alphafoldserver.com/fold/156d096f94d69fb",
+        "import_provenance": "agent2/baselines/server_submission_2026-10-06/imported/T1183/provenance.json",
+        "ranking_score": 0.92,
+        "sample_index": 0,
+        "actual_settings": {
+          "useStructureTemplate": true,
+          "maxTemplateDate": null,
+          "maxTemplateDate_record": "server default; not serialized in downloaded request",
+          "effective_max_template_date_verified": false,
+          "documented_useStructureTemplate_default": true,
+          "documented_maximum_allowed_template_date": "2025-02-03",
+          "documented_default_template_cutoff": null,
+          "documentation_note": "The cited JSON README documents the maximum allowed date, not the default maxTemplateDate. An omitted effective cutoff cannot be inferred from that maximum."
+        },
+        "differences_from_prepared": [
+          {
+            "field": "exported_schema_version",
+            "prepared": 1,
+            "actual": 3
+          },
+          {
+            "field": "maxTemplateDate",
+            "prepared": "2021-09-30",
+            "actual": "omitted in exported request"
+          }
+        ]
+      }
+    }
+  ]
+}

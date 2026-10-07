@@ -1,0 +1,10 @@
+{
+  "source_commit": "d65f2b5ae2acb150704bf20347604c3de3b896c3",
+  "branch": "agent2-evaluation",
+  "upstream_tracked_file_count": 232,
+  "readme_original_checkout_bytes_preserved": 19698,
+  "readme_append_only": true,
+  "other_upstream_changes": [],
+  "check_stage": "pre-publication",
+  "remote_pushed_at_check": false
+}
