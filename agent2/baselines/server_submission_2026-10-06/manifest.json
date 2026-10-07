@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-06T18:38:39.112691+00:00",
+  "status": "PREPARED_NOT_SUBMITTED",
+  "schema_source": "https://github.com/google-deepmind/alphafold/blob/main/server/README.md",
+  "validation": "Checked official documented job fields/types, uint32-string seed, list-of-jobs envelope, single protein chain, canonical sequence alphabet, declared lengths, byte-identical FASTA copies, and JSON round trips.",
+  "batch_json": "agent2\\baselines\\server_submission_2026-10-06\\jobs.json",
+  "batch_json_sha256": "c5f68bc28dcafc26af0198ab6b09c991dbcace5477cb85cec1bfb40d85b49ee0",
+  "settings": {
+    "dialect": "alphafoldserver",
+    "version": 1,
+    "modelSeeds": [
+      "1"
+    ],
+    "count": 1,
+    "useStructureTemplate": true,
+    "maxTemplateDate": "2021-09-30",
+    "custom_msa": false,
+    "custom_templates": false
+  },
+  "primary_model_selection_rule": "Choose the server-ranked primary/top model using server ranking evidence before opening or computing its experimental-reference accuracy scores. Preserve all downloaded samples and the ranking evidence. Do not select by truth scores.",
+  "comparison_note": "Seed 1 and template cutoff match Nancy's declared local AF3 setup. Server implementation/database differences may remain; equal seed/cutoff does not guarantee identical predictions.",
+  "jobs": [
+    {
+      "target": "T1147",
+      "job_name": "P2_T1147_AF3server_20261006",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "source_fasta": "targets\\T1147\\T1147.fasta",
+      "submitted_fasta": "agent2\\baselines\\server_submission_2026-10-06\\T1147.fasta",
+      "source_fasta_sha256": "a893341e31ca4d0f232db80c1a1a2eb0bab563d4624fe5b9233b08747665c26c",
+      "submitted_fasta_sha256": "a893341e31ca4d0f232db80c1a1a2eb0bab563d4624fe5b9233b08747665c26c",
+      "sequence_sha256": "0f1c1dc6a72748984ba53d9fa22648b0665ba8fe173ff93a751c1fde53545b6a",
+      "sequence_length": 103,
+      "job_json": "agent2\\baselines\\server_submission_2026-10-06\\T1147_job.json",
+      "job_json_sha256": "732cf8f41585ebe5e937e7b20d2a089cbce7974085421d8e1d320930baf33804",
+      "server_job_id": null,
+      "server_job_url": null,
+      "submitted_utc": null
+    },
+    {
+      "target": "T1133",
+      "job_name": "P2_T1133_AF3server_20261006",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "source_fasta": "targets\\T1133\\T1133.fasta",
+      "submitted_fasta": "agent2\\baselines\\server_submission_2026-10-06\\T1133.fasta",
+      "source_fasta_sha256": "99175cb90a68a5cd1b6b20a77112f9a862895abe66e005c97cbb25efeb020ba5",
+      "submitted_fasta_sha256": "99175cb90a68a5cd1b6b20a77112f9a862895abe66e005c97cbb25efeb020ba5",
+      "sequence_sha256": "69ef9d1ee5e99d8ff675049362646ce98154a7edce6631df597d0b51c7a0791a",
+      "sequence_length": 585,
+      "job_json": "agent2\\baselines\\server_submission_2026-10-06\\T1133_job.json",
+      "job_json_sha256": "148b61a21ab0523ba06b8e6c491fa43a132d59c95ce770a205c58e65e556477f",
+      "server_job_id": null,
+      "server_job_url": null,
+      "submitted_utc": null
+    },
+    {
+      "target": "T1183",
+      "job_name": "P2_T1183_AF3server_20261006",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "source_fasta": "targets\\T1183\\T1183.fasta",
+      "submitted_fasta": "agent2\\baselines\\server_submission_2026-10-06\\T1183.fasta",
+      "source_fasta_sha256": "0410c6782badc444606a24a3c152ada33256dec7ed71eeac00aab17b2c94a3f1",
+      "submitted_fasta_sha256": "0410c6782badc444606a24a3c152ada33256dec7ed71eeac00aab17b2c94a3f1",
+      "sequence_sha256": "ca7510bf6be0c607285773212eb751b65695d609a3cae8233ade7c9a9c8c1b06",
+      "sequence_length": 200,
+      "job_json": "agent2\\baselines\\server_submission_2026-10-06\\T1183_job.json",
+      "job_json_sha256": "c0d28d23425a91987d128a1e232de348c7218f1d80665588a05b396fee22923f",
+      "server_job_id": null,
+      "server_job_url": null,
+      "submitted_utc": null
+    }
+  ]
+}

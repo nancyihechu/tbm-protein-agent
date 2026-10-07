@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "target": "T1147",
+    "method": "alphafold3_local",
+    "status": "SCORED",
+    "model": "targets\\T1147\\af3_model\\t1147\\t1147_model.cif",
+    "reference": "8EM5:A",
+    "domain": "T1147-D1",
+    "target_length": 103,
+    "normalization_length": 92,
+    "matched_ca": 92,
+    "observed_reference_ca_in_domain": 92,
+    "model_ca_in_full_target": 103,
+    "evaluated_fraction_of_domain": 1.0,
+    "model_coverage_of_full_target": 1.0,
+    "tm_score": 0.9827,
+    "gdt_ts": 0.9946,
+    "lddt_ca_common_mask": 0.9763789581205311,
+    "rmsd_ca_angstrom": 0.4725554379685405,
+    "tmscore_status": "AVAILABLE"
+  },
+  "lddt_details": {
+    "score": 0.9763789581205311,
+    "eligible_reference_pairs": 1958,
+    "conserved_by_threshold": [
+      1787,
+      1944,
+      1958,
+      1958
+    ],
+    "thresholds_angstrom": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "radius_angstrom": 15.0,
+    "missing_mobile_residues": 0,
+    "scope": "lDDT-Calpha on supplied fixed residue mask; no stereochemical checks",
+    "status": "AVAILABLE",
+    "source": "https://openstructure.org/docs/2.11/mol/alg/lddt/"
+  },
+  "tmscore_details": {
+    "tm_score": 0.9827,
+    "gdt_ts": 0.9946,
+    "gdt_ts_native_mask_normalized": 0.9946,
+    "reference_normalization_length": 92,
+    "frozen_mask_count": 92,
+    "gdt_normalization": "Official optimized GDT counts / declared reference length (rescaled from native mask length)",
+    "gdt_status": "AVAILABLE",
+    "status": "AVAILABLE",
+    "source": "https://github.com/pylelab/USalign/blob/master/TMscore.cpp",
+    "command": [
+      "agent2/.tools\\TMscore.exe",
+      "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\results\\with_server_2026-10-06\\T1147\\alphafold3_local\\model_common_ca.pdb",
+      "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\results\\with_server_2026-10-06\\T1147\\reference_common_ca.pdb",
+      "-l",
+      "92"
+    ],
+    "executable_sha256": "0431ba2500ba588f1d6a88620aa140f02223eda9224771427b7bade5c67c14a3",
+    "stdout": "\n *************************************************************************\n *                                 TM-SCORE                              *\n * A scoring function to assess the similarity of protein structures     *\n * Based on statistics:                                                  *\n *       0.0 < TM-score < 0.17, random structural similarity             *\n *       0.5 < TM-score < 1.00, in about the same fold                   *\n * Reference: Yang Zhang and Jeffrey Skolnick, Proteins 2004 57: 702-710 *\n * For comments, please email to: zhanglab@zhanggroup.org                *\n *************************************************************************\n\nStructure1: C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\results\\with_server_2026-10-06\\T1147\\alphafold3_local\\model_common_ca.pdb    Length=   92\nStructure2: C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\results\\with_server_2026-10-06\\T1147\\reference_common_ca.pdb    Length=   92 (by which all scores are normalized)\nNumber of residues in common=   92\nRMSD of  the common residues=    0.473\n\nTM-score    = 0.9827  (d0= 3.48)\nMaxSub-score= 0.9829  (d0= 3.50)\nGDT-TS-score= 0.9946 %(d<1)=0.9783 %(d<2)=1.0000 %(d<4)=1.0000 %(d<8)=1.0000\nGDT-HA-score= 0.9429 %(d<0.5)=0.7935 %(d<1)=0.9783 %(d<2)=1.0000 %(d<4)=1.0000\nTM-score    = 0.9827  (if normalized by user-specified LN=92.00 and d0=3.48)\n\n -------- rotation matrix to rotate Chain-1 to Chain-2 ------\n i          t(i)         u(i,1)         u(i,2)         u(i,3)\n 1     36.8081069862   0.5319535848   0.6490039345  -0.5438927069\n 2     22.6760540117  -0.5821268272  -0.1861706128  -0.7914978585\n 3     73.7670168864  -0.6149420628   0.7376546590   0.2787684763\n\nSuperposition in the TM-score: Length(d<5.0)= 92\n(\":\" denotes the residue pairs of distance < 5.0 Angstrom)\nDPKVVTYEIFGTPGAVVDINYLDLDARTQRVNDVTLPWSITLSTTAPSALAHIVAQGNADHIGCRIIVDGELRVESVSTGVNAQTYCIEKSA\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\nDPKVVTYEIFGTPGAVVDINYLDLDARTQRVNDVTLPWSITLSTTAPSALAHIVAQGNADHIGCRIIVDGELRVESVSTGVNAQTYCIEKSA\n12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012\n\n",
+    "stderr": ""
+  },
+  "model_sha256": "a90f302d8e3b9da65e3a35c7adfa2953af34f2c43ef740e38180d6981f5d4f08",
+  "reference_sha256": "41bced682b3a5b88754a7771eda126766bcca695036d6d2be744035f7dccc89b",
+  "reference_altloc": "highest occupancy; ties require explicit selection",
+  "missing_ca_records": [],
+  "reference_missing_ca_records": []
+}

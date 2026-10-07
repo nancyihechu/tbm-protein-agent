@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-10-06T18:24:17.915306+00:00",
+  "program": "TMscore",
+  "executable": "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\TMscore.exe",
+  "executable_sha256": "0431ba2500ba588f1d6a88620aa140f02223eda9224771427b7bade5c67c14a3",
+  "platform": "Windows x86_64 PE executable",
+  "source_repository": "https://github.com/pylelab/USalign",
+  "source_commit": "1fa25a958fe3095900eba2ef9b48562bdc462251",
+  "source_tree_modified": false,
+  "source_files_sha256": {
+    "addChainID.cpp": "e30e445e49b49bc11030ea10581d53ac2e701acb2a40c8f4e40d801de10d3514",
+    "basic_fun.h": "0ac7688bec88d820c756f0fc196417e1e5ed934b192077a9137c263c749cc590",
+    "biounitasym.cpp": "789e1589711b6a8eaf25d71605822843e049f1803ead61d7ab71d1892cd6f4d4",
+    "BLOSUM.h": "85485694df2802a6a6c61e9970a6ac76c53a274b209d9576e683527a99bdb34d",
+    "ca2rr.cpp": "dabdd3fcdb703d4f981707127c74bd2e5ba65970170ad55ae51774ef54a61268",
+    "ca2rr.h": "1d8d2b28350c4f70e71ad80c59d94c39c0f1f76e9b77c13248730212f77d3d0e",
+    "cif2pdb.cpp": "e56cca2346252873ae0a9e612c9f50b198ac237b4db22aabfaee20f31b0a646f",
+    "flexalign.h": "a6506352022ec98368106528d5ece04e23a14c40addd98328f6aeec26e7774b6",
+    "GeometryTools.h": "6eb67d095027aeb8b378c4710c6eb81b5f5d0b40a58b5ff04d99b3a9970969f1",
+    "HwRMSD.cpp": "b4840bccb2d60378320cf27489c29a32c7089cab5eafbd65d487ac32a9d32fa6",
+    "HwRMSD.h": "95b9b515f2356cf19aa9a90a7d9f4d527201a37f3e86f20e9dc4b8d5f23f4757",
+    "Kabsch.h": "5bb0613cb311d110b3e80b358f2ff37235485c731e690716178f6b644e4efb24",
+    "MMalign.cpp": "ec5ac5638fc4eaca8bca0338731ae27b2e258a028f8e8159f44b76b67b00c9dc",
+    "MMalign.h": "019961381d1854997f0e0fc8313093daedc4ab4f2bb2041e5c969828a6bda8ae",
+    "NW.h": "800049f401de442e0cce2e4f330dc7107b0085cd81b7b7c88d2147642c2194b7",
+    "NWalign.cpp": "2f3f27206068b30b6a755a81172e3aae59b1fe8c60047ccf6cf783473c41ae39",
+    "NWalign.h": "3d5e7a40a89d64fc980089bc55f704c94f22f02f586368337831d07a5a18cf90",
+    "param_set.h": "23d51d58198a11cd81713e1b8ec117ffade6226d17595b505548941ea046d4ea",
+    "pdb2fasta.cpp": "37b93b357d613759c51e098f2e921655792d55414c3e1013996ee0d42375a719",
+    "pdb2ss.cpp": "ab0ab7fd831d6703f53f532676f0e4b44db20b9702872b86925abbcc6e74188e",
+    "pdb2xyz.cpp": "3e9b8f48c853c8f5089031d41190f4264c4ff751fe8ac38536640b3722816024",
+    "pdbAtomName.cpp": "6fe68f1ff66f6d185d6e13501f01e1cad74dc25c94d2badccb5c4efcd2095118",
+    "pstream.h": "43d43d3a043c1345ff0a695840c8a37d5aeae4fd7480420f3997d1441b2ac22e",
+    "qTMclust.cpp": "93abb1357bfa7ee0448a7655827af63fa87be41a4cafda60a14811bae947d232",
+    "se.cpp": "9d13d3bdde13056ab475d22723797a27ecda4548c8ee6feb24bbc770f582e244",
+    "se.h": "9793c04a50d2b8e2a249ce832e90d8461fec6bd5bd3030f409187689978950db",
+    "SOIalign.h": "7e99dfb77e4c8f37d70ee8316d496866b42cde4de29ffd7f70036e296b84a57a",
+    "TMalign.cpp": "ba817485efc2b09119959b68d8ebd45f8d9ceae9352516cfc960e9e3c651cb33",
+    "TMalign.h": "3252883d7830909e4310821f0d3f6d39f322dc6bcfabd01153ed9239acc66e5b",
+    "TMscore.cpp": "20896e24ff16a8111bb90bbca68ca0702fb94f572f392eb7dda1bfdb8cb102f5",
+    "TMscore.h": "90c8729833112dc2e6f28e79f5d51049b2d0056c1b4bb3e614f909dda7c068f2",
+    "USalign.cpp": "7c6e5ab629caf920a71e017e0c23ab8f0eb7e40649ef14a038c4a36d7d013ca7",
+    "USFlexalign.cpp": "6ee980c615042b1c70faff5ba9970758179cf10d438d417e03478ab5627451d7",
+    "xyz_sfetch.cpp": "1843bd860ec17cf54a066f73a722776a9f767a5bc210a1fcc6c5e4ef46fba7cf"
+  },
+  "license_file": "USalign/LICENSE",
+  "license_sha256": "b20bf8b423663c571beeb7e342643cc04a1812913f70db1dde4a58e893e97600",
+  "license_text": "   US-align: universal structure alignment of monomeric and complex proteins\n   and nucleic acids\n\n   References to cite:\n   (1) Chengxin Zhang, Lydia Freddolino, Yang Zhang (2026)\n       Nat Protoc. 21, 517-541.\n   (2) Chengxin Zhang, Morgan Shine, Anna Marie Pyle, Yang Zhang\n       (2022) Nat Methods. 19(9), 1109-1115.\n   (3) Chengxin Zhang, Anna Marie Pyle (2022) iScience. 25(10), 105218.\n\n   DISCLAIMER:\n     Permission to use, copy, modify, and distribute this program for \n     any purpose, with or without fee, is hereby granted, provided that\n     the notices on the head, the reference information, and this\n     copyright notice appear in all copies or substantial portions of \n     the Software. It is provided \"as is\" without express or implied \n     warranty.\n",
+  "compiler": {
+    "package": "ziglang",
+    "package_version": "0.15.2",
+    "zig_version": "0.15.2",
+    "wheel_url": "https://files.pythonhosted.org/packages/b9/6b/8ab0853a312108b4089747486366b824b5da89773cb56f661f9994de17db/ziglang-0.15.2-py3-none-win_amd64.whl",
+    "wheel_hashes": {
+      "sha256": "ca80dc9c70dbdfdd9ee51d000de3501a95d33d9782ab9ab9b56f700484ebcd83"
+    },
+    "installation_scope": "agent2/.venv only"
+  },
+  "build_working_directory": "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\USalign",
+  "build_command_argv": [
+    "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.venv\\Scripts\\python.exe",
+    "-m",
+    "ziglang",
+    "c++",
+    "-target",
+    "x86_64-windows-gnu",
+    "-O3",
+    "-ffast-math",
+    "-static",
+    "TMscore.cpp",
+    "-o",
+    "..\\TMscore.exe"
+  ],
+  "build_environment": {
+    "ZIG_GLOBAL_CACHE_DIR": "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\zig-global-cache",
+    "ZIG_LOCAL_CACHE_DIR": "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\zig-local-cache"
+  },
+  "validation": [
+    {
+      "name": "identity",
+      "command": [
+        "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\TMscore.exe",
+        "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\validation\\synthetic_native.pdb",
+        "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\validation\\synthetic_native.pdb",
+        "-l",
+        "40"
+      ],
+      "synthetic": true,
+      "default_tm_score": 1.0,
+      "custom_length_tm_score": 0.5,
+      "rmsd": 0.0,
+      "gdt_ts_observed_reference_normalized": 1.0,
+      "residues_in_common": 20,
+      "stdout_file": "validation\\identity_output.txt"
+    },
+    {
+      "name": "rigid_transform",
+      "command": [
+        "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\TMscore.exe",
+        "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\validation\\synthetic_rigid_transform.pdb",
+        "C:\\Users\\matty\\Jupyter Notebooks\\PhD\\Computational Modeling of Molecular Molecules\\tbm-protein-agent\\agent2\\.tools\\validation\\synthetic_native.pdb",
+        "-l",
+        "40"
+      ],
+      "synthetic": true,
+      "default_tm_score": 1.0,
+      "custom_length_tm_score": 0.5,
+      "rmsd": 0.0,
+      "gdt_ts_observed_reference_normalized": 1.0,
+      "residues_in_common": 20,
+      "stdout_file": "validation\\rigid_transform_output.txt"
+    }
+  ],
+  "normalization_note": "The -l option emits a separate user-length-normalized TM-score. GDT-TS remains normalized by Structure2 observed length; domain-normalized GDT requires explicit rescaling by observed/reference-domain length.",
+  "limitations": [
+    "Native Windows build does not support gzip parsing without the external POSIX tools. Agent 2 should supply uncompressed PDB/mmCIF inputs.",
+    "Validation uses synthetic fixtures, not Project 2 model evaluations."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "agent": "ChatGPT (Astra)",
+  "source_commit": "d65f2b5ae2acb150704bf20347604c3de3b896c3",
+  "tmscore_executable": null,
+  "targets": [
+    {
+      "target": "T1147",
+      "metadata": "targets/T1147/metadata.json",
+      "domain_id": "T1147-D1",
+      "domain_range": [
+        12,
+        103
+      ],
+      "normalization_length": 92,
+      "classification": "TBM-easy",
+      "classification_source": "https://predictioncenter.org/casp15/domains_summary.cgi",
+      "reference": {
+        "path": "agent2/references/8EM5.cif",
+        "pdb_id": "8EM5",
+        "chain": "A",
+        "model_index": 0,
+        "sha256": "41bced682b3a5b88754a7771eda126766bcca695036d6d2be744035f7dccc89b",
+        "source_url": "https://files.rcsb.org/download/8EM5.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Official CASP15 mapping is 8EM5. Entity 1 is an exact 103-residue FASTA match; chain A was fixed as the first author-chain copy among A-F. All 92 observed chain-A C-alpha residues match FASTA positions 12-103 at auth_seq_id; residues 1-11 are unobserved."
+      },
+      "tbm_chain": "A",
+      "af3_chain": "A",
+      "af3_server": null
+    },
+    {
+      "target": "T1133",
+      "metadata": "targets/T1133/metadata.json",
+      "domain_id": "T1133-D1",
+      "domain_range": [
+        4,
+        427
+      ],
+      "normalization_length": 424,
+      "classification": "TBM-easy",
+      "classification_source": "https://predictioncenter.org/casp15/domains_summary.cgi",
+      "reference": {
+        "path": "agent2/references/8DYS.cif",
+        "pdb_id": "8DYS",
+        "chain": "A",
+        "model_index": 0,
+        "altloc": "A",
+        "sha256": "4213eab7013a47d1fdd2c1392dbedf4013ccb3191ead916188e5f7d203b290e3",
+        "source_url": "https://files.rcsb.org/download/8DYS.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Official CASP15 mapping is 8DYS and chain A is the sole protein chain. Entity 1 contains an 18-residue N-terminal tag followed by the exact 585-residue FASTA. label_seq_id equals target position plus 18, but auth_seq_id equals target position. All 409 observed C-alpha residues match FASTA positions 4-98, 105-241, and 251-427."
+      },
+      "tbm_chain": "A",
+      "af3_chain": "A",
+      "af3_server": null
+    },
+    {
+      "target": "T1183",
+      "metadata": "targets/T1183/metadata.json",
+      "domain_id": "T1183-D1",
+      "domain_range": [
+        1,
+        195
+      ],
+      "normalization_length": 195,
+      "classification": "TBM-easy",
+      "classification_source": "https://predictioncenter.org/casp15/domains_summary.cgi",
+      "reference": {
+        "path": "agent2/references/8IFX.cif",
+        "pdb_id": "8IFX",
+        "chain": "B",
+        "model_index": 0,
+        "sha256": "8a4a3eb36c50debb971e28365c07247271a862261c442107b8b2cad58f5157ec",
+        "source_url": "https://files.rcsb.org/download/8IFX.cif",
+        "verified": true,
+        "mapping_mode": "author_number_equals_target",
+        "mapping_evidence": "Current official CASP15 target and domain tables link 8IFX. Entity 2, author chain B (TsaB), exactly matches the 200-residue FASTA; chain A is TsaD. All 195 observed chain-B C-alpha residues match FASTA positions 1-195 at auth_seq_id; residues 196-200 are unobserved. The target-provider paper cites related 8IEY instead; that discrepancy is documented in references/README.md."
+      },
+      "tbm_chain": "A",
+      "af3_chain": "A",
+      "af3_server": null
+    }
+  ]
+}
