@@ -1,10 +1,10 @@
 {
   "source_commit": "d65f2b5ae2acb150704bf20347604c3de3b896c3",
-  "branch": "agent2-evaluation",
+  "publication_scope": "Only new files under agent2/",
   "upstream_tracked_file_count": 232,
   "readme_original_checkout_bytes_preserved": 19698,
-  "readme_append_only": true,
-  "other_upstream_changes": [],
-  "check_stage": "pre-publication",
-  "remote_pushed_at_check": false
+  "readme_identical_to_original": true,
+  "upstream_files_modified": [],
+  "original_backup": "Untouched ZIP, full-history bundle and original README saved before work; original source remains at source_commit",
+  "check_stage": "Before pushing folder-only clarification commit"
 }

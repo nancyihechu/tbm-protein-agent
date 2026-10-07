@@ -4,7 +4,7 @@
 of the Project 2 workflow presented on October 2. It reads Nancy's Agent 1 model
 bundle and calculates accuracy against independently verified experimental
 structures. The original Agent 1 scripts, metadata, predictions, and comparisons
-remain unchanged. The main repository README contains an appended Agent 2 section.
+remain unchanged. All additions are contained in this `agent2/` folder.
 
 The AI follows [AGENT_PROMPT.md](AGENT_PROMPT.md) to inspect inputs, run the tools,
 interpret evidence, and prepare the report. The numerical work is deterministic
@@ -209,11 +209,13 @@ Upstream snapshot: `d65f2b5ae2acb150704bf20347604c3de3b896c3` from
 Work was prepared on local branch `agent2-evaluation`. Before changes, the parent
 workspace received both an untouched ZIP and a verified full-history Git bundle
 under `output/Project2_Repository_Backup/`. GitHub publication was authorized on
-October 6; the addition contains this folder and an appended root README section.
+October 6; the final addition is confined to this `agent2/` folder.
 The original source remains recoverable at the upstream commit above. This folder's
 Git attributes preserve exact file bytes so recorded checksums survive checkout.
 
-Only the main README is appended; every other upstream tracked file is unchanged.
+Every upstream tracked file, including the root README, is unchanged from the
+original source commit. The earlier README addition was removed when the user
+clarified that all additions should stay inside `agent2/`.
 Keep reference structures under Agent 2 so they are not fed into Agent 1 template
 search. Any future edits to Agent 1 need a new preserved copy or an explicit,
 reviewable patch.

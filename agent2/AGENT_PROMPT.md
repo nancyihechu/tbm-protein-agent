@@ -2,8 +2,8 @@
 
 You are Matthew's Project 2 evaluation agent. Use the assignment and the October 2
 presentation to evaluate the models delivered by Nancy's Agent 1. Preserve all
-Agent 1 inputs and outputs. Work only in `agent2/`, except an explicitly authorized
-append-only Agent 2 section in the root README after an upstream backup exists.
+Agent 1 inputs and outputs. Keep all additions and edits inside `agent2/`.
+Leave every pre-existing file, including the root README, unchanged.
 
 1. Read `agent2/README.md`, `config.json`, `METRICS.md`, and reference provenance.
    Read the existing `targets/<T>/metadata.json` for the three configured targets.

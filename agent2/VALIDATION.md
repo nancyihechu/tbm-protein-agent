@@ -25,14 +25,14 @@
   experimental scoring. All selected sample 0; T1147 used the recorded lowest-index
   rule to resolve a rounded tie. Default template dates omitted by the server are
   recorded as unverified rather than filled from intended submission settings.
-- The main README remains append-only relative to Nancy's original. Its checkout
-  bytes remain an exact prefix of the updated file. All 231 other upstream tracked
-  files remain unchanged; see [preservation check](PRESERVATION_CHECK.json).
+- All 232 original tracked files, including the root README, remain unchanged
+  from Nancy's original source commit. The root README's exact checkout bytes
+  were restored after the user clarified additions-only publication; see
+  [preservation check](PRESERVATION_CHECK.json).
 - The original full-history Git bundle passed `git bundle verify`. An untouched
   ZIP and original checkout README are also saved outside the working repository.
-- GitHub publication was authorized after evaluation. The published addition is
-  confined to `agent2/` and an appended root README section; the preservation
-  record describes the pre-publication check. Three user-authorized AlphaFold
+- GitHub publication was authorized after evaluation. The final published
+  addition is confined to `agent2/`. Three user-authorized AlphaFold
   Server jobs were submitted and completed.
 
 The configured evaluation deliverables are complete. The
