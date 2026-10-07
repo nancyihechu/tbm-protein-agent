@@ -364,6 +364,8 @@ biomolecular interactions with AlphaFold 3. *Nature* (2024).
 
 ## Demo video
 
+Watch the demo: https://youtu.be/fiXPi3SNPDc
+
 [demo/agent1_demo_T1147.mp4](demo/agent1_demo_T1147.mp4) shows a live run of target T1147 only, with voice over.
 
 ## License
